@@ -1,0 +1,745 @@
+[
+  {
+    "screenId": "100eff93a3ec4ee0b642471a5a5a393d",
+    "title": "Insights - SurfaceGate Desk",
+    "componentName": "InsightsSurfacegateDesk",
+    "file": "src/screens/InsightsSurfacegateDesk.tsx",
+    "buttons": 5,
+    "inputs": 0,
+    "links": 10,
+    "actions": [
+      {
+        "id": "button-1-1",
+        "kind": "button",
+        "label": "Button 1",
+        "index": 0
+      },
+      {
+        "id": "create-ticket-2",
+        "kind": "button",
+        "label": "Create Ticket",
+        "index": 1
+      },
+      {
+        "id": "last-24-hours-3",
+        "kind": "button",
+        "label": "Last 24 Hours",
+        "index": 2
+      },
+      {
+        "id": "export-summary-4",
+        "kind": "button",
+        "label": "Export Summary",
+        "index": 3
+      },
+      {
+        "id": "button-5-5",
+        "kind": "button",
+        "label": "Button 5",
+        "index": 4
+      },
+      {
+        "id": "ticket-operations-1",
+        "kind": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queue-management-2",
+        "kind": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "agent-workload-3",
+        "kind": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "support-6",
+        "kind": "link",
+        "label": "Support",
+        "href": "#",
+        "index": 5
+      },
+      {
+        "id": "view-all-7",
+        "kind": "link",
+        "label": "View All",
+        "href": "#",
+        "index": 6
+      },
+      {
+        "id": "tkt-8921-8",
+        "kind": "link",
+        "label": "TKT-8921",
+        "href": "#",
+        "index": 7
+      },
+      {
+        "id": "tkt-8900-9",
+        "kind": "link",
+        "label": "TKT-8900",
+        "href": "#",
+        "index": 8
+      },
+      {
+        "id": "tkt-8854-10",
+        "kind": "link",
+        "label": "TKT-8854",
+        "href": "#",
+        "index": 9
+      }
+    ]
+  },
+  {
+    "screenId": "18b770b61b3a487cafa7c30c5a66d4c1",
+    "title": "Queue and Status Management - SurfaceGate Desk",
+    "componentName": "QueueAndStatusManagementSurfacegateDesk",
+    "file": "src/screens/QueueAndStatusManagementSurfacegateDesk.tsx",
+    "buttons": 9,
+    "inputs": 1,
+    "links": 6,
+    "actions": [
+      {
+        "id": "button-1-1",
+        "kind": "button",
+        "label": "Button 1",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "create-ticket-3",
+        "kind": "button",
+        "label": "Create Ticket",
+        "index": 2
+      },
+      {
+        "id": "filter-4",
+        "kind": "button",
+        "label": "Filter",
+        "index": 3
+      },
+      {
+        "id": "sort-5",
+        "kind": "button",
+        "label": "Sort",
+        "index": 4
+      },
+      {
+        "id": "button-6-6",
+        "kind": "button",
+        "label": "Button 6",
+        "index": 5
+      },
+      {
+        "id": "button-7-7",
+        "kind": "button",
+        "label": "Button 7",
+        "index": 6
+      },
+      {
+        "id": "button-8-8",
+        "kind": "button",
+        "label": "Button 8",
+        "index": 7
+      },
+      {
+        "id": "add-lane-9",
+        "kind": "button",
+        "label": "Add Lane",
+        "index": 8
+      },
+      {
+        "id": "ticket-operations-1",
+        "kind": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queue-management-2",
+        "kind": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "agent-workload-3",
+        "kind": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "support-6",
+        "kind": "link",
+        "label": "Support",
+        "href": "#",
+        "index": 5
+      }
+    ]
+  },
+  {
+    "screenId": "1c7aec3ef6054cf995d16bace7745994",
+    "title": "Agent Workload - SurfaceGate Desk",
+    "componentName": "AgentWorkloadSurfacegateDesk",
+    "file": "src/screens/AgentWorkloadSurfacegateDesk.tsx",
+    "buttons": 6,
+    "inputs": 1,
+    "links": 8,
+    "actions": [
+      {
+        "id": "notifications-1",
+        "kind": "button",
+        "label": "notifications",
+        "index": 0
+      },
+      {
+        "id": "create-ticket-2",
+        "kind": "button",
+        "label": "Create Ticket",
+        "index": 1
+      },
+      {
+        "id": "filter-3",
+        "kind": "button",
+        "label": "Filter",
+        "index": 2
+      },
+      {
+        "id": "sort-4",
+        "kind": "button",
+        "label": "Sort",
+        "index": 3
+      },
+      {
+        "id": "more-vert-5",
+        "kind": "button",
+        "label": "more_vert",
+        "index": 4
+      },
+      {
+        "id": "more-vert-6",
+        "kind": "button",
+        "label": "more_vert",
+        "index": 5
+      },
+      {
+        "id": "ticket-operations-1",
+        "kind": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queue-management-2",
+        "kind": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "agent-workload-3",
+        "kind": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "support-6",
+        "kind": "link",
+        "label": "Support",
+        "href": "#",
+        "index": 5
+      },
+      {
+        "id": "inc-4092-7",
+        "kind": "link",
+        "label": "#INC-4092",
+        "href": "#",
+        "index": 6
+      },
+      {
+        "id": "inc-4088-8",
+        "kind": "link",
+        "label": "#INC-4088",
+        "href": "#",
+        "index": 7
+      }
+    ]
+  },
+  {
+    "screenId": "874a85117dce4dbd99957f62882f0fbc",
+    "title": "Ticket Editor - SurfaceGate Desk",
+    "componentName": "TicketEditorSurfacegateDesk",
+    "file": "src/screens/TicketEditorSurfacegateDesk.tsx",
+    "buttons": 7,
+    "inputs": 2,
+    "links": 6,
+    "actions": [
+      {
+        "id": "button-1-1",
+        "kind": "button",
+        "label": "Button 1",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "discard-3",
+        "kind": "button",
+        "label": "Discard",
+        "index": 2
+      },
+      {
+        "id": "save-ticket-4",
+        "kind": "button",
+        "label": "Save Ticket",
+        "index": 3
+      },
+      {
+        "id": "browse-files-5",
+        "kind": "button",
+        "label": "Browse Files",
+        "index": 4
+      },
+      {
+        "id": "cancel-6",
+        "kind": "button",
+        "label": "Cancel",
+        "index": 5
+      },
+      {
+        "id": "save-ticket-7",
+        "kind": "button",
+        "label": "Save Ticket",
+        "index": 6
+      },
+      {
+        "id": "ticket-operations-1",
+        "kind": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queue-management-2",
+        "kind": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "agent-workload-3",
+        "kind": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "support-6",
+        "kind": "link",
+        "label": "Support",
+        "href": "#",
+        "index": 5
+      }
+    ]
+  },
+  {
+    "screenId": "2f12190f7367422fbacd3ea4d0156ab7",
+    "title": "Ticket Operations - SurfaceGate Desk",
+    "componentName": "TicketOperationsSurfacegateDesk",
+    "file": "src/screens/TicketOperationsSurfacegateDesk.tsx",
+    "buttons": 13,
+    "inputs": 1,
+    "links": 6,
+    "actions": [
+      {
+        "id": "button-1-1",
+        "kind": "button",
+        "label": "Button 1",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "create-ticket-3",
+        "kind": "button",
+        "label": "Create Ticket",
+        "index": 2
+      },
+      {
+        "id": "filter-4",
+        "kind": "button",
+        "label": "Filter",
+        "index": 3
+      },
+      {
+        "id": "sort-5",
+        "kind": "button",
+        "label": "Sort",
+        "index": 4
+      },
+      {
+        "id": "button-6-6",
+        "kind": "button",
+        "label": "Button 6",
+        "index": 5
+      },
+      {
+        "id": "button-7-7",
+        "kind": "button",
+        "label": "Button 7",
+        "index": 6
+      },
+      {
+        "id": "button-8-8",
+        "kind": "button",
+        "label": "Button 8",
+        "index": 7
+      },
+      {
+        "id": "button-9-9",
+        "kind": "button",
+        "label": "Button 9",
+        "index": 8
+      },
+      {
+        "id": "assign-to-me-10",
+        "kind": "button",
+        "label": "Assign to me",
+        "index": 9
+      },
+      {
+        "id": "change-status-11",
+        "kind": "button",
+        "label": "Change Status",
+        "index": 10
+      },
+      {
+        "id": "button-12-12",
+        "kind": "button",
+        "label": "Button 12",
+        "index": 11
+      },
+      {
+        "id": "button-13-13",
+        "kind": "button",
+        "label": "Button 13",
+        "index": 12
+      },
+      {
+        "id": "ticket-operations-1",
+        "kind": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queue-management-2",
+        "kind": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "agent-workload-3",
+        "kind": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "support-6",
+        "kind": "link",
+        "label": "Support",
+        "href": "#",
+        "index": 5
+      }
+    ]
+  },
+  {
+    "screenId": "44fd8a8c36b1447094c42f0cc70538c4",
+    "title": "Empty and Error Recovery - SurfaceGate Desk",
+    "componentName": "EmptyAndErrorRecoverySurfacegateDesk",
+    "file": "src/screens/EmptyAndErrorRecoverySurfacegateDesk.tsx",
+    "buttons": 7,
+    "inputs": 1,
+    "links": 6,
+    "actions": [
+      {
+        "id": "create-ticket-1",
+        "kind": "button",
+        "label": "Create Ticket",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "button-3-3",
+        "kind": "button",
+        "label": "Button 3",
+        "index": 2
+      },
+      {
+        "id": "button-4-4",
+        "kind": "button",
+        "label": "Button 4",
+        "index": 3
+      },
+      {
+        "id": "clear-all-filters-5",
+        "kind": "button",
+        "label": "Clear All Filters",
+        "index": 4
+      },
+      {
+        "id": "retry-load-6",
+        "kind": "button",
+        "label": "Retry Load",
+        "index": 5
+      },
+      {
+        "id": "create-new-ticket-7",
+        "kind": "button",
+        "label": "+ Create New Ticket",
+        "index": 6
+      },
+      {
+        "id": "ticket-operations-1",
+        "kind": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queue-management-2",
+        "kind": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "agent-workload-3",
+        "kind": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "support-6",
+        "kind": "link",
+        "label": "Support",
+        "href": "#",
+        "index": 5
+      }
+    ]
+  },
+  {
+    "screenId": "3ca85751798f4e36bda531467856bcc5",
+    "title": "Settings and Preferences - SurfaceGate Desk",
+    "componentName": "SettingsAndPreferencesSurfacegateDesk",
+    "file": "src/screens/SettingsAndPreferencesSurfacegateDesk.tsx",
+    "buttons": 8,
+    "inputs": 3,
+    "links": 6,
+    "actions": [
+      {
+        "id": "button-1-1",
+        "kind": "button",
+        "label": "Button 1",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "button-3-3",
+        "kind": "button",
+        "label": "Button 3",
+        "index": 2
+      },
+      {
+        "id": "create-ticket-4",
+        "kind": "button",
+        "label": "Create Ticket",
+        "index": 3
+      },
+      {
+        "id": "button-5-5",
+        "kind": "button",
+        "label": "Button 5",
+        "index": 4
+      },
+      {
+        "id": "reset-settings-6",
+        "kind": "button",
+        "label": "Reset Settings",
+        "index": 5
+      },
+      {
+        "id": "discard-7",
+        "kind": "button",
+        "label": "Discard",
+        "index": 6
+      },
+      {
+        "id": "save-changes-8",
+        "kind": "button",
+        "label": "Save Changes",
+        "index": 7
+      },
+      {
+        "id": "ticket-operations-1",
+        "kind": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queue-management-2",
+        "kind": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "agent-workload-3",
+        "kind": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "support-6",
+        "kind": "link",
+        "label": "Support",
+        "href": "#",
+        "index": 5
+      }
+    ]
+  }
+]

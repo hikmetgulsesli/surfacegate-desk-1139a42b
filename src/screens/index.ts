@@ -1,0 +1,14 @@
+export { InsightsSurfacegateDesk } from "./InsightsSurfacegateDesk";
+export type { InsightsSurfacegateDeskProps, InsightsSurfacegateDeskActionId } from "./InsightsSurfacegateDesk";
+export { QueueAndStatusManagementSurfacegateDesk } from "./QueueAndStatusManagementSurfacegateDesk";
+export type { QueueAndStatusManagementSurfacegateDeskProps, QueueAndStatusManagementSurfacegateDeskActionId } from "./QueueAndStatusManagementSurfacegateDesk";
+export { AgentWorkloadSurfacegateDesk } from "./AgentWorkloadSurfacegateDesk";
+export type { AgentWorkloadSurfacegateDeskProps, AgentWorkloadSurfacegateDeskActionId } from "./AgentWorkloadSurfacegateDesk";
+export { TicketEditorSurfacegateDesk } from "./TicketEditorSurfacegateDesk";
+export type { TicketEditorSurfacegateDeskProps, TicketEditorSurfacegateDeskActionId } from "./TicketEditorSurfacegateDesk";
+export { TicketOperationsSurfacegateDesk } from "./TicketOperationsSurfacegateDesk";
+export type { TicketOperationsSurfacegateDeskProps, TicketOperationsSurfacegateDeskActionId } from "./TicketOperationsSurfacegateDesk";
+export { EmptyAndErrorRecoverySurfacegateDesk } from "./EmptyAndErrorRecoverySurfacegateDesk";
+export type { EmptyAndErrorRecoverySurfacegateDeskProps, EmptyAndErrorRecoverySurfacegateDeskActionId } from "./EmptyAndErrorRecoverySurfacegateDesk";
+export { SettingsAndPreferencesSurfacegateDesk } from "./SettingsAndPreferencesSurfacegateDesk";
+export type { SettingsAndPreferencesSurfacegateDeskProps, SettingsAndPreferencesSurfacegateDeskActionId } from "./SettingsAndPreferencesSurfacegateDesk";
