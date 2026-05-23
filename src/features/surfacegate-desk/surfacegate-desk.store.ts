@@ -1,6 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { surfacegateDeskFixture } from '../../__fixtures__/surfacegate-desk.fixture';
-import { loadSurfacegateDeskState, saveSurfacegateDeskState } from './surfacegate-desk.repo';
+import {
+  clearSurfacegateDeskState,
+  loadSurfacegateDeskState,
+  saveSurfacegateDeskState,
+} from './surfacegate-desk.repo';
 
 export type SurfacegateDeskRoute =
   | 'ticket-operations'
@@ -135,6 +139,7 @@ export function useSurfacegateDeskStore() {
     };
   });
   const hasHydrated = useRef(false);
+  const skipNextPersist = useRef(false);
 
   const snapshot = useMemo(() => toSnapshot(state), [state]);
 
@@ -145,6 +150,11 @@ export function useSurfacegateDeskStore() {
   useEffect(() => {
     if (!hasHydrated.current) {
       hasHydrated.current = true;
+      return;
+    }
+
+    if (skipNextPersist.current) {
+      skipNextPersist.current = false;
       return;
     }
 
@@ -187,9 +197,28 @@ export function useSurfacegateDeskStore() {
     }));
   }
 
+  function dismissPanel() {
+    setState((current) => ({
+      ...current,
+      activePanel: routePanels[current.activeRoute],
+      lastError: null,
+    }));
+  }
+
   function recoverStorage() {
     const result = saveSurfacegateDeskState(surfacegateDeskFixture.preferences);
 
+    setState({
+      ...surfacegateDeskFixture.preferences,
+      storageStatus: result.storageStatus,
+      lastError: result.lastError,
+    });
+  }
+
+  function clearLocalData() {
+    const result = clearSurfacegateDeskState();
+
+    skipNextPersist.current = true;
     setState({
       ...surfacegateDeskFixture.preferences,
       storageStatus: result.storageStatus,
@@ -203,6 +232,8 @@ export function useSurfacegateDeskStore() {
     navigate,
     selectRecord,
     setPanel,
+    dismissPanel,
     recoverStorage,
+    clearLocalData,
   };
 }

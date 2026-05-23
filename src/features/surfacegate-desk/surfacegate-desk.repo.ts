@@ -84,3 +84,31 @@ export function saveSurfacegateDeskState(
     };
   }
 }
+
+export function clearSurfacegateDeskState(): Pick<
+  SurfacegateDeskStorageResult,
+  'storageStatus' | 'lastError'
+> {
+  const storage = getStorage();
+
+  if (!storage) {
+    return {
+      storageStatus: 'unavailable',
+      lastError: null,
+    };
+  }
+
+  try {
+    storage.removeItem(STORAGE_KEY);
+
+    return {
+      storageStatus: 'ready',
+      lastError: 'Local SurfaceGate Desk data was cleared.',
+    };
+  } catch {
+    return {
+      storageStatus: 'error',
+      lastError: 'SurfaceGate Desk local data could not be cleared.',
+    };
+  }
+}

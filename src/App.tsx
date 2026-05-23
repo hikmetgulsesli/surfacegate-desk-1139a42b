@@ -28,6 +28,18 @@ type RecoveryActions = NonNullable<
 
 export default function App() {
   const surfacegate = useSurfacegateDeskStore();
+  const { snapshot } = surfacegate;
+  const selectedLabel =
+    snapshot.selectedRecord && 'title' in snapshot.selectedRecord
+      ? `${snapshot.selectedRecord.id}: ${snapshot.selectedRecord.title}`
+      : snapshot.selectedRecord
+        ? `${snapshot.selectedRecord.id}: ${snapshot.selectedRecord.name}`
+        : 'None selected';
+  const statusMessage =
+    snapshot.lastError ??
+    (snapshot.storageStatus === 'saved'
+      ? 'SurfaceGate Desk changes saved locally.'
+      : 'SurfaceGate Desk local state ready.');
 
   const navigationActions = {
     'ticket-operations-1': () => surfacegate.navigate('ticket-operations'),
@@ -102,31 +114,57 @@ export default function App() {
 
   return (
     <div data-setfarm-root="surfacegate-desk" className="min-h-screen bg-slate-50 text-slate-950">
-      {surfacegate.snapshot.storageStatus === 'corrupted' ? (
+      <section
+        aria-label="SurfaceGate Desk app state"
+        className="border-b border-slate-200 bg-white px-gutter py-3 text-sm text-slate-700"
+      >
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-6 gap-y-2">
+          <span data-testid="active-screen">Screen: {snapshot.activeScreen}</span>
+          <span data-testid="selected-record">Selected: {selectedLabel}</span>
+          <span data-testid="item-count">
+            Items: {snapshot.counts.tickets} tickets, {snapshot.counts.queues} queues,{' '}
+            {snapshot.counts.agents} agents
+          </span>
+          <span data-testid="active-panel">Panel: {snapshot.activePanel}</span>
+          <span data-testid="storage-status">Storage: {snapshot.storageStatus}</span>
+          <span role="status" aria-live="polite" data-testid="storage-feedback">
+            {statusMessage}
+          </span>
+          <button
+            type="button"
+            className="rounded border border-slate-300 px-3 py-1 font-medium text-slate-800 hover:bg-slate-100"
+            onClick={surfacegate.dismissPanel}
+          >
+            Close panel
+          </button>
+          <button
+            type="button"
+            className="rounded border border-slate-300 px-3 py-1 font-medium text-slate-800 hover:bg-slate-100"
+            onClick={surfacegate.clearLocalData}
+          >
+            Clear local data
+          </button>
+        </div>
+      </section>
+      {snapshot.storageStatus === 'corrupted' ? (
         <EmptyAndErrorRecoverySurfacegateDesk actions={recoveryActions} />
       ) : null}
-      {surfacegate.snapshot.storageStatus !== 'corrupted' &&
-      surfacegate.snapshot.activeScreen === 'queue-management' ? (
+      {snapshot.storageStatus !== 'corrupted' && snapshot.activeScreen === 'queue-management' ? (
         <QueueAndStatusManagementSurfacegateDesk actions={queueActions} />
       ) : null}
-      {surfacegate.snapshot.storageStatus !== 'corrupted' &&
-      surfacegate.snapshot.activeScreen === 'agent-workload' ? (
+      {snapshot.storageStatus !== 'corrupted' && snapshot.activeScreen === 'agent-workload' ? (
         <AgentWorkloadSurfacegateDesk actions={agentActions} />
       ) : null}
-      {surfacegate.snapshot.storageStatus !== 'corrupted' &&
-      surfacegate.snapshot.activeScreen === 'insights' ? (
+      {snapshot.storageStatus !== 'corrupted' && snapshot.activeScreen === 'insights' ? (
         <InsightsSurfacegateDesk actions={insightsActions} />
       ) : null}
-      {surfacegate.snapshot.storageStatus !== 'corrupted' &&
-      surfacegate.snapshot.activeScreen === 'settings' ? (
+      {snapshot.storageStatus !== 'corrupted' && snapshot.activeScreen === 'settings' ? (
         <SettingsAndPreferencesSurfacegateDesk actions={settingsActions} />
       ) : null}
-      {surfacegate.snapshot.storageStatus !== 'corrupted' &&
-      surfacegate.snapshot.activeScreen === 'editor' ? (
+      {snapshot.storageStatus !== 'corrupted' && snapshot.activeScreen === 'editor' ? (
         <TicketEditorSurfacegateDesk actions={editorActions} />
       ) : null}
-      {surfacegate.snapshot.storageStatus !== 'corrupted' &&
-      surfacegate.snapshot.activeScreen === 'ticket-operations' ? (
+      {snapshot.storageStatus !== 'corrupted' && snapshot.activeScreen === 'ticket-operations' ? (
         <TicketOperationsSurfacegateDesk actions={ticketActions} />
       ) : null}
     </div>
