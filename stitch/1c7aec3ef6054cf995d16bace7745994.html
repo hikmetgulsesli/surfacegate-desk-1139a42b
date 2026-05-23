@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Agent Workload - SurfaceGate Desk</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#3f465c",
+                      "error": "#ba1a1a",
+                      "surface-container-high": "#e6e8ea",
+                      "tertiary-fixed": "#dae2fd",
+                      "tertiary-container": "#3d4459",
+                      "surface-dim": "#d8dadc",
+                      "secondary": "#505f76",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary": "#262e42",
+                      "on-tertiary": "#ffffff",
+                      "surface": "#f7f9fb",
+                      "outline": "#737781",
+                      "on-secondary-fixed": "#0b1c30",
+                      "error-container": "#ffdad6",
+                      "surface-variant": "#e0e3e5",
+                      "outline-variant": "#c3c6d1",
+                      "on-tertiary-container": "#aab2cb",
+                      "on-primary-container": "#8fb3f6",
+                      "on-error-container": "#93000a",
+                      "on-secondary-container": "#54647a",
+                      "primary-fixed": "#d7e2ff",
+                      "surface-container-low": "#f2f4f6",
+                      "on-background": "#191c1e",
+                      "inverse-on-surface": "#eff1f3",
+                      "surface-container-highest": "#e0e3e5",
+                      "secondary-fixed-dim": "#b7c8e1",
+                      "background": "#f7f9fb",
+                      "on-surface": "#191c1e",
+                      "surface-tint": "#395e9b",
+                      "inverse-primary": "#abc7ff",
+                      "primary-fixed-dim": "#abc7ff",
+                      "on-secondary-fixed-variant": "#38485d",
+                      "on-tertiary-fixed": "#131b2e",
+                      "surface-container": "#eceef0",
+                      "primary": "#002d62",
+                      "on-error": "#ffffff",
+                      "surface-bright": "#f7f9fb",
+                      "inverse-surface": "#2d3133",
+                      "tertiary-fixed-dim": "#bec6e0",
+                      "on-primary-fixed": "#001b3f",
+                      "primary-container": "#1a4480",
+                      "on-primary-fixed-variant": "#1d4682",
+                      "secondary-fixed": "#d3e4fe",
+                      "on-primary": "#ffffff",
+                      "secondary-container": "#d0e1fb",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#434750"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "xs": "4px",
+                      "gutter": "16px",
+                      "md": "16px",
+                      "lg": "24px",
+                      "xl": "32px",
+                      "sm": "8px",
+                      "margin": "24px",
+                      "base": "4px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "body-md": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "body-sm": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "label-md": ["Inter"]
+              },
+              "fontSize": {
+                      "body-lg": ["15px", {"lineHeight": "22px", "fontWeight": "400"}],
+                      "headline-md": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                      "label-sm": ["11px", {"lineHeight": "14px", "fontWeight": "600"}],
+                      "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+                      "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}]
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col md:flex-row">
+<!-- SideNavBar (Web Only) -->
+<nav class="hidden md:flex flex-col h-screen w-64 border-r border-outline-variant bg-surface sticky top-0 py-margin z-50">
+<div class="px-md mb-lg">
+<h1 class="text-headline-md font-headline-md font-bold text-primary flex items-center gap-sm">
+<span class="material-symbols-outlined fill text-primary">desk</span>
+                SurfaceGate
+            </h1>
+<p class="text-label-md font-label-md text-on-surface-variant mt-xs px-lg">Desk</p>
+</div>
+<ul class="flex flex-col gap-xs px-sm flex-1">
+<li>
+<a class="flex items-center gap-md px-md py-sm rounded text-on-surface-variant hover:bg-surface-container-low transition-colors text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined">confirmation_number</span>
+                    Ticket Operations
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-md px-md py-sm rounded text-on-surface-variant hover:bg-surface-container-low transition-colors text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined">group_work</span>
+                    Queue Management
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-md px-md py-sm rounded text-primary font-bold border-r-4 border-primary bg-surface-container-low text-label-md font-label-md opacity-80 duration-150" href="#">
+<span class="material-symbols-outlined">engineering</span>
+                    Agent Workload
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-md px-md py-sm rounded text-on-surface-variant hover:bg-surface-container-low transition-colors text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined">insights</span>
+                    Insights
+                </a>
+</li>
+</ul>
+<div class="mt-auto px-sm pt-md border-t border-outline-variant">
+<ul class="flex flex-col gap-xs">
+<li>
+<a class="flex items-center gap-md px-md py-sm rounded text-on-surface-variant hover:bg-surface-container-low transition-colors text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined">settings</span>
+                        Settings
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-md px-md py-sm rounded text-on-surface-variant hover:bg-surface-container-low transition-colors text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined">help</span>
+                        Support
+                    </a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col min-w-0">
+<!-- TopNavBar -->
+<header class="flex justify-between items-center w-full px-lg py-sm sticky top-0 z-40 bg-surface-container-lowest border-b border-outline-variant">
+<div class="flex items-center gap-md">
+<span class="md:hidden text-headline-md font-headline-md font-bold text-primary">SurfaceGate Desk</span>
+</div>
+<div class="flex-1 max-w-md mx-lg hidden md:block">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full pl-[36px] pr-sm py-xs border border-outline-variant rounded bg-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none text-body-sm font-body-sm" placeholder="Search agents or tickets..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-high rounded p-xs scale-95 duration-100">notifications</button>
+<button class="bg-primary text-on-primary px-md py-sm rounded text-label-md font-label-md hover:bg-primary-container transition-colors">Create Ticket</button>
+<div class="w-8 h-8 rounded-full bg-surface-variant border border-outline-variant overflow-hidden">
+<!-- Avatar placeholder -->
+</div>
+</div>
+</header>
+<!-- Page Content -->
+<main class="flex-1 p-lg flex flex-col lg:flex-row gap-lg overflow-hidden">
+<!-- Agent List Section -->
+<section class="flex-1 flex flex-col min-w-0 bg-surface-container-lowest border border-outline-variant rounded">
+<div class="p-md border-b border-outline-variant flex justify-between items-center bg-surface-container-low">
+<h2 class="text-headline-md font-headline-md text-on-surface">Agent Workload</h2>
+<div class="flex gap-sm">
+<button class="flex items-center gap-xs px-sm py-xs border border-outline-variant rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined" style="font-size: 16px;">filter_list</span>
+                            Filter
+                        </button>
+<button class="flex items-center gap-xs px-sm py-xs border border-outline-variant rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined" style="font-size: 16px;">sort</span>
+                            Sort
+                        </button>
+</div>
+</div>
+<div class="overflow-y-auto flex-1 p-sm">
+<!-- Agent Card 1 -->
+<div class="border border-outline-variant rounded p-md mb-sm bg-surface-container-lowest hover:bg-surface transition-colors group relative">
+<div class="flex justify-between items-start mb-md">
+<div class="flex items-center gap-md">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center text-label-md font-bold">AS</div>
+<div class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-green-500 border-2 border-surface-container-lowest"></div>
+</div>
+<div>
+<h3 class="text-body-lg font-body-lg font-medium text-on-surface">Alex Santos</h3>
+<p class="text-label-sm font-label-sm text-on-surface-variant">L2 Support Engineer</p>
+</div>
+</div>
+<div class="flex items-center gap-sm">
+<span class="bg-error-container text-on-error-container px-xs py-base rounded text-label-sm font-label-sm flex items-center gap-xs">
+<span class="material-symbols-outlined" style="font-size: 14px;">warning</span> 2 Overdue
+                                </span>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-on-surface opacity-0 group-hover:opacity-100 transition-opacity">more_vert</button>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-md mb-sm">
+<div>
+<p class="text-label-sm font-label-sm text-on-surface-variant mb-xs">Open Tickets</p>
+<p class="text-body-lg font-body-lg">12</p>
+</div>
+<div class="col-span-2">
+<div class="flex justify-between text-label-sm font-label-sm text-on-surface-variant mb-xs">
+<span>Capacity (12/15)</span>
+<span>80%</span>
+</div>
+<div class="h-2 w-full bg-surface-variant rounded overflow-hidden">
+<div class="h-full bg-primary" style="width: 80%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Agent Card 2 -->
+<div class="border border-outline-variant rounded p-md mb-sm bg-surface-container-lowest hover:bg-surface transition-colors group">
+<div class="flex justify-between items-start mb-md">
+<div class="flex items-center gap-md">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center text-label-md font-bold">JD</div>
+<div class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-yellow-500 border-2 border-surface-container-lowest"></div>
+</div>
+<div>
+<h3 class="text-body-lg font-body-lg font-medium text-on-surface">Jordan Davis</h3>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Network Specialist</p>
+</div>
+</div>
+<div class="flex items-center gap-sm">
+<span class="bg-surface-variant text-on-surface-variant px-xs py-base rounded text-label-sm font-label-sm flex items-center gap-xs">
+<span class="material-symbols-outlined" style="font-size: 14px;">schedule</span> 1 Stale
+                                </span>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-on-surface opacity-0 group-hover:opacity-100 transition-opacity">more_vert</button>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-md mb-sm">
+<div>
+<p class="text-label-sm font-label-sm text-on-surface-variant mb-xs">Open Tickets</p>
+<p class="text-body-lg font-body-lg">18</p>
+</div>
+<div class="col-span-2">
+<div class="flex justify-between text-label-sm font-label-sm text-on-surface-variant mb-xs">
+<span>Capacity (18/20)</span>
+<span class="text-error">90%</span>
+</div>
+<div class="h-2 w-full bg-surface-variant rounded overflow-hidden">
+<div class="h-full bg-error" style="width: 90%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Activity Feed Sidebar -->
+<aside class="w-full lg:w-96 flex flex-col bg-surface-container-lowest border border-outline-variant rounded">
+<div class="p-md border-b border-outline-variant bg-surface-container-low">
+<h2 class="text-headline-md font-headline-md text-on-surface">Assignment Activity</h2>
+</div>
+<div class="flex-1 overflow-y-auto p-md space-y-md">
+<!-- Activity Item -->
+<div class="flex gap-sm">
+<div class="mt-xs">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">swap_horiz</span>
+</div>
+<div>
+<p class="text-body-sm font-body-sm text-on-surface">Ticket <a class="text-primary hover:underline font-medium" href="#">#INC-4092</a> reassigned from Alex S. to Jordan D.</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-base">10 mins ago • System Auto-balance</p>
+</div>
+</div>
+<!-- Activity Item -->
+<div class="flex gap-sm">
+<div class="mt-xs">
+<span class="material-symbols-outlined text-error" style="font-size: 18px;">warning</span>
+</div>
+<div>
+<p class="text-body-sm font-body-sm text-on-surface">Ticket <a class="text-primary hover:underline font-medium" href="#">#INC-4088</a> escalated to L3.</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-base">45 mins ago • Manual Action</p>
+</div>
+</div>
+</div>
+</aside>
+</main>
+</div>
+</body></html>

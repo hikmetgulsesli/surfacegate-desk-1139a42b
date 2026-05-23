@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ticket Editor - SurfaceGate Desk</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#3f465c",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#e6e8ea",
+                    "tertiary-fixed": "#dae2fd",
+                    "tertiary-container": "#3d4459",
+                    "surface-dim": "#d8dadc",
+                    "secondary": "#505f76",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#262e42",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#f7f9fb",
+                    "outline": "#737781",
+                    "on-secondary-fixed": "#0b1c30",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e0e3e5",
+                    "outline-variant": "#c3c6d1",
+                    "on-tertiary-container": "#aab2cb",
+                    "on-primary-container": "#8fb3f6",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#54647a",
+                    "primary-fixed": "#d7e2ff",
+                    "surface-container-low": "#f2f4f6",
+                    "on-background": "#191c1e",
+                    "inverse-on-surface": "#eff1f3",
+                    "surface-container-highest": "#e0e3e5",
+                    "secondary-fixed-dim": "#b7c8e1",
+                    "background": "#f7f9fb",
+                    "on-surface": "#191c1e",
+                    "surface-tint": "#395e9b",
+                    "inverse-primary": "#abc7ff",
+                    "primary-fixed-dim": "#abc7ff",
+                    "on-secondary-fixed-variant": "#38485d",
+                    "on-tertiary-fixed": "#131b2e",
+                    "surface-container": "#eceef0",
+                    "primary": "#002d62",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f7f9fb",
+                    "inverse-surface": "#2d3133",
+                    "tertiary-fixed-dim": "#bec6e0",
+                    "on-primary-fixed": "#001b3f",
+                    "primary-container": "#1a4480",
+                    "on-primary-fixed-variant": "#1d4682",
+                    "secondary-fixed": "#d3e4fe",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#d0e1fb",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#434750"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "xs": "4px",
+                    "gutter": "16px",
+                    "md": "16px",
+                    "lg": "24px",
+                    "xl": "32px",
+                    "sm": "8px",
+                    "margin": "24px",
+                    "base": "4px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "body-lg": ["15px", {"lineHeight": "22px", "fontWeight": "400"}],
+                    "headline-md": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "label-sm": ["11px", {"lineHeight": "14px", "fontWeight": "600"}],
+                    "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+                    "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col md:flex-row">
+<!-- SideNavBar (Hidden on Mobile, Visible on md+) -->
+<nav class="hidden md:flex flex-col h-screen w-64 border-r border-outline-variant bg-surface dark:bg-on-surface sticky top-0 py-margin">
+<div class="px-gutter mb-lg">
+<h1 class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed">SurfaceGate</h1>
+<span class="text-body-sm text-on-surface-variant dark:text-on-tertiary-container">Desk</span>
+</div>
+<ul class="flex-1 flex flex-col gap-sm px-sm">
+<li>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-primary dark:text-primary-fixed font-bold border-r-4 border-primary dark:border-primary-fixed hover:bg-surface-container-low dark:hover:bg-on-tertiary-fixed-variant transition-colors opacity-80 duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">confirmation_number</span>
+<span class="text-label-md font-label-md">Ticket Operations</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant dark:text-on-tertiary-container hover:text-on-surface dark:hover:text-surface-container-lowest hover:bg-surface-container-low dark:hover:bg-on-tertiary-fixed-variant transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">group_work</span>
+<span class="text-label-md font-label-md">Queue Management</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant dark:text-on-tertiary-container hover:text-on-surface dark:hover:text-surface-container-lowest hover:bg-surface-container-low dark:hover:bg-on-tertiary-fixed-variant transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">engineering</span>
+<span class="text-label-md font-label-md">Agent Workload</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant dark:text-on-tertiary-container hover:text-on-surface dark:hover:text-surface-container-lowest hover:bg-surface-container-low dark:hover:bg-on-tertiary-fixed-variant transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">insights</span>
+<span class="text-label-md font-label-md">Insights</span>
+</a>
+</li>
+</ul>
+<div class="mt-auto px-sm flex flex-col gap-sm">
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant dark:text-on-tertiary-container hover:text-on-surface dark:hover:text-surface-container-lowest hover:bg-surface-container-low dark:hover:bg-on-tertiary-fixed-variant transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<span class="text-label-md font-label-md">Settings</span>
+</a>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant dark:text-on-tertiary-container hover:text-on-surface dark:hover:text-surface-container-lowest hover:bg-surface-container-low dark:hover:bg-on-tertiary-fixed-variant transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">help</span>
+<span class="text-label-md font-label-md">Support</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col min-w-0">
+<!-- TopNavBar (Visible on Mobile, Hidden on md+) -->
+<header class="flex md:hidden justify-between items-center w-full px-lg py-sm sticky top-0 z-40 bg-surface-container-lowest dark:bg-on-surface border-b border-outline-variant dark:border-on-surface-variant">
+<div class="flex items-center gap-sm">
+<button class="text-on-surface-variant p-sm hover:bg-surface-container-high rounded-full">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h2 class="text-headline-md font-headline-md font-bold text-primary">SurfaceGate Desk</h2>
+</div>
+<div class="flex items-center gap-md">
+<button class="text-on-surface-variant p-sm hover:bg-surface-container-high rounded-full">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<img alt="User Avatar" class="w-8 h-8 rounded-full border border-outline-variant" data-alt="A professional headshot of a person, used as a placeholder user avatar in a minimalist dark-mode application. The lighting is soft and studio-like, ensuring a clean and modern aesthetic. The background is neutral, directing focus entirely to the subject's face. The overall mood is approachable yet corporate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOY6KbFG_jXVTcTUk8_Q0PVxtvsv9UnBl3z3lGj0RoxwLATLc-B-yXn3yCK28xQiBwIheDV4FPBTkO4sKebTeezGkIPX_uYy8a3glaicegVOe3Kf90L-gml5coZ9wrN8s6m1kX-G_uwZN36c6Sl-T4g8whkAn2Zlr3Rqql69TrRkUOtqpyv3kfh5Nw2IX6iMy4wR7TCF3B2UVKaZGP6y9um-WVMWDJTZBoqcAn5ErlKHS95nOdyRd4J1RAv0zaQxP6MQ3FSQ9TppA"/>
+</div>
+</header>
+<!-- Unsaved State Banner -->
+<div class="bg-surface-container-low border-b border-outline-variant px-margin py-sm flex items-center gap-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-outline" style="font-variation-settings: 'FILL' 1;">error</span>
+<span>You have unsaved changes.</span>
+<div class="ml-auto flex gap-sm">
+<button class="px-md py-sm text-label-md font-label-md text-primary hover:bg-primary-fixed transition-colors rounded-DEFAULT">Discard</button>
+<button class="px-md py-sm text-label-md font-label-md bg-primary text-on-primary hover:bg-primary-container transition-colors rounded-DEFAULT shadow-sm">Save Ticket</button>
+</div>
+</div>
+<!-- Editor Content Canvas -->
+<main class="flex-1 p-margin overflow-y-auto">
+<div class="max-w-4xl mx-auto flex flex-col gap-lg">
+<!-- Header -->
+<div>
+<h1 class="text-headline-lg font-headline-lg text-on-background mb-xs">Create Ticket</h1>
+<p class="text-body-md font-body-md text-on-surface-variant">Fill in the details to log a new issue or request.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-lg">
+<!-- Left Column: Primary Details -->
+<div class="lg:col-span-2 flex flex-col gap-md">
+<!-- Subject & Description Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md shadow-sm">
+<div class="mb-md">
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-xs" for="subject">Subject <span class="text-error">*</span></label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-DEFAULT px-md py-sm text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" id="subject" placeholder="Brief summary of the issue" type="text"/>
+<!-- Validation Error Example (Hidden by default) -->
+<p class="text-error text-label-sm mt-xs hidden items-center gap-xs">
+<span class="material-symbols-outlined text-[14px]">error</span> Subject is required.
+                                </p>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-xs" for="description">Description <span class="text-error">*</span></label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant rounded-DEFAULT px-md py-sm text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors resize-y" id="description" placeholder="Detailed explanation of the issue, steps to reproduce, or relevant context." rows="8"></textarea>
+</div>
+</div>
+<!-- Attachments Card (Optional) -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md shadow-sm border-dashed">
+<div class="flex flex-col items-center justify-center py-lg text-center">
+<span class="material-symbols-outlined text-outline-variant text-[32px] mb-sm">upload_file</span>
+<p class="text-body-md font-body-md text-on-surface">Drag and drop files here</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-xs">or click to browse from your computer</p>
+<button class="mt-md px-md py-sm text-label-md font-label-md border border-outline-variant rounded-DEFAULT hover:bg-surface-container-low transition-colors">Browse Files</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Classification & Metadata -->
+<div class="flex flex-col gap-md">
+<!-- Classification Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md shadow-sm">
+<h3 class="text-headline-md font-headline-md text-on-background border-b border-outline-variant pb-xs mb-md">Classification</h3>
+<div class="flex flex-col gap-md">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-xs" for="requester">Requester <span class="text-error">*</span></label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-outline text-[18px]">person_search</span>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-DEFAULT pl-lg pr-md py-sm text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" id="requester" placeholder="Search users..." type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-xs" for="status">Status</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded-DEFAULT px-md py-sm text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors appearance-none" id="status">
+<option value="new">New</option>
+<option value="open">Open</option>
+<option value="pending">Pending</option>
+</select>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-xs" for="priority">Priority</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded-DEFAULT px-md py-sm text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors appearance-none" id="priority">
+<option value="low">Low</option>
+<option selected="" value="medium">Medium</option>
+<option value="high">High</option>
+<option value="urgent">Urgent</option>
+</select>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-xs" for="assignee_group">Assignee Group</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded-DEFAULT px-md py-sm text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors appearance-none" id="assignee_group">
+<option value="">Unassigned</option>
+<option value="tier1">Tier 1 Support</option>
+<option value="tier2">Tier 2 Escalation</option>
+<option value="network">Network Ops</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Actions -->
+<div class="flex justify-end gap-md pt-lg border-t border-outline-variant mt-md">
+<button class="px-lg py-sm text-label-md font-label-md border border-outline-variant text-on-surface hover:bg-surface-container-low transition-colors rounded-DEFAULT">Cancel</button>
+<button class="px-lg py-sm text-label-md font-label-md bg-primary text-on-primary hover:bg-primary-container transition-colors rounded-DEFAULT shadow-sm flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">save</span>
+                        Save Ticket
+                    </button>
+</div>
+</div>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,65 @@
+[
+  {
+    "screenId": "100eff93a3ec4ee0b642471a5a5a393d",
+    "name": "Insights - SurfaceGate Desk",
+    "type": "app-screen",
+    "description": "Insights - SurfaceGate Desk screen",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  },
+  {
+    "screenId": "18b770b61b3a487cafa7c30c5a66d4c1",
+    "name": "Queue and Status Management - SurfaceGate Desk",
+    "type": "app-screen",
+    "description": "Queue and Status Management - SurfaceGate Desk screen",
+    "surfaceIds": [
+      "SURF_QUEUE_AND_STATUS_MANAGEMENT"
+    ]
+  },
+  {
+    "screenId": "1c7aec3ef6054cf995d16bace7745994",
+    "name": "Agent Workload - SurfaceGate Desk",
+    "type": "app-screen",
+    "description": "Agent Workload - SurfaceGate Desk screen",
+    "surfaceIds": [
+      "SURF_AGENT_WORKLOAD"
+    ]
+  },
+  {
+    "screenId": "874a85117dce4dbd99957f62882f0fbc",
+    "name": "Ticket Editor - SurfaceGate Desk",
+    "type": "form",
+    "description": "Ticket Editor - SurfaceGate Desk screen",
+    "surfaceIds": [
+      "SURF_TICKET_EDITOR"
+    ]
+  },
+  {
+    "screenId": "2f12190f7367422fbacd3ea4d0156ab7",
+    "name": "Ticket Operations - SurfaceGate Desk",
+    "type": "app-screen",
+    "description": "Ticket Operations - SurfaceGate Desk screen",
+    "surfaceIds": [
+      "SURF_TICKET_OPERATIONS"
+    ]
+  },
+  {
+    "screenId": "44fd8a8c36b1447094c42f0cc70538c4",
+    "name": "Empty and Error Recovery - SurfaceGate Desk",
+    "type": "error",
+    "description": "Empty and Error Recovery - SurfaceGate Desk screen",
+    "surfaceIds": [
+      "SURF_EMPTY_AND_ERROR_RECOVERY"
+    ]
+  },
+  {
+    "screenId": "3ca85751798f4e36bda531467856bcc5",
+    "name": "Settings and Preferences - SurfaceGate Desk",
+    "type": "settings",
+    "description": "Settings and Preferences - SurfaceGate Desk screen",
+    "surfaceIds": [
+      "SURF_SETTINGS_AND_PREFERENCES"
+    ]
+  }
+]

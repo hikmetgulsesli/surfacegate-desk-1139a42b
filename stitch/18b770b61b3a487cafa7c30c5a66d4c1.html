@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Queue Management - SurfaceGate Desk</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#3f465c",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e6e8ea",
+                        "tertiary-fixed": "#dae2fd",
+                        "tertiary-container": "#3d4459",
+                        "surface-dim": "#d8dadc",
+                        "secondary": "#505f76",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#262e42",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#f7f9fb",
+                        "outline": "#737781",
+                        "on-secondary-fixed": "#0b1c30",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e0e3e5",
+                        "outline-variant": "#c3c6d1",
+                        "on-tertiary-container": "#aab2cb",
+                        "on-primary-container": "#8fb3f6",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#54647a",
+                        "primary-fixed": "#d7e2ff",
+                        "surface-container-low": "#f2f4f6",
+                        "on-background": "#191c1e",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-container-highest": "#e0e3e5",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "background": "#f7f9fb",
+                        "on-surface": "#191c1e",
+                        "surface-tint": "#395e9b",
+                        "inverse-primary": "#abc7ff",
+                        "primary-fixed-dim": "#abc7ff",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "on-tertiary-fixed": "#131b2e",
+                        "surface-container": "#eceef0",
+                        "primary": "#002d62",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f7f9fb",
+                        "inverse-surface": "#2d3133",
+                        "tertiary-fixed-dim": "#bec6e0",
+                        "on-primary-fixed": "#001b3f",
+                        "primary-container": "#1a4480",
+                        "on-primary-fixed-variant": "#1d4682",
+                        "secondary-fixed": "#d3e4fe",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#d0e1fb",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#434750"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xs": "4px",
+                        "gutter": "16px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "xl": "32px",
+                        "sm": "8px",
+                        "margin": "24px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+                        "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "600" }],
+                        "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+                        "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        /* Custom scrollbar for Kanban board */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #c3c6d1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background flex h-screen overflow-hidden antialiased">
+<!-- SideNavBar Component -->
+<aside class="bg-surface h-screen w-64 border-r border-outline-variant flex flex-col sticky top-0 py-margin z-50 flex-shrink-0 hidden md:flex">
+<div class="px-gutter mb-lg">
+<h1 class="text-headline-md font-headline-md font-bold text-primary flex items-center gap-sm">
+<span class="material-symbols-outlined icon-fill text-primary">hub</span>
+                SurfaceGate
+            </h1>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider mt-xs">Desk</p>
+</div>
+<nav class="flex-1 flex flex-col gap-xs px-sm">
+<a class="flex items-center gap-sm px-sm py-sm rounded-DEFAULT text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">confirmation_number</span>
+<span class="text-label-md font-label-md">Ticket Operations</span>
+</a>
+<a class="flex items-center gap-sm px-sm py-sm rounded-DEFAULT text-primary font-bold border-r-4 border-primary bg-surface-container-low opacity-80 duration-150" href="#">
+<span class="material-symbols-outlined icon-fill">group_work</span>
+<span class="text-label-md font-label-md">Queue Management</span>
+</a>
+<a class="flex items-center gap-sm px-sm py-sm rounded-DEFAULT text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">engineering</span>
+<span class="text-label-md font-label-md">Agent Workload</span>
+</a>
+<a class="flex items-center gap-sm px-sm py-sm rounded-DEFAULT text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">insights</span>
+<span class="text-label-md font-label-md">Insights</span>
+</a>
+</nav>
+<div class="mt-auto px-sm flex flex-col gap-xs">
+<a class="flex items-center gap-sm px-sm py-sm rounded-DEFAULT text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">settings</span>
+<span class="text-label-md font-label-md">Settings</span>
+</a>
+<a class="flex items-center gap-sm px-sm py-sm rounded-DEFAULT text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">help</span>
+<span class="text-label-md font-label-md">Support</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col h-full overflow-hidden relative">
+<!-- TopNavBar Component -->
+<header class="flex justify-between items-center w-full px-lg py-sm sticky top-0 z-40 bg-surface-container-lowest border-b border-outline-variant flex-shrink-0 h-[60px]">
+<div class="flex items-center gap-md flex-1">
+<!-- Mobile Menu Button (Hidden on Desktop) -->
+<button class="md:hidden text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<!-- Persistent Search -->
+<div class="relative w-full max-w-md hidden sm:block">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full bg-surface pl-[36px] pr-sm py-[6px] text-body-md font-body-md border border-outline-variant rounded-DEFAULT focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-on-surface-variant transition-shadow" placeholder="Search tickets, IDs, or assignees..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<button class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full p-xs transition-colors relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-[4px] right-[4px] w-[8px] h-[8px] bg-error rounded-full border-2 border-surface-container-lowest"></span>
+</button>
+<button class="bg-primary text-on-primary text-label-md font-label-md px-md py-[8px] rounded-DEFAULT hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-sm active:scale-95 duration-100 flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                    Create Ticket
+                </button>
+<div class="w-[32px] h-[32px] rounded-full bg-surface-variant border border-outline-variant overflow-hidden cursor-pointer flex-shrink-0 ml-sm">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="A close-up portrait of a professional male with short dark hair in a brightly lit, modern corporate environment. The lighting is soft and even, typical of a high-end office light-mode aesthetic, highlighting the subject's approachable and focused demeanor. The background is slightly blurred with subtle hints of white and pale gray office architecture. The image conveys a sense of competence and reliability suitable for an enterprise software interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9zej-t66jPc9wPLLivcsl5PptotR9gD4pwAg2-WS6SJVGtoppqsRnQL-qioul0_t4WEOPJZewmRtrEIjDbs2CLkkod3-D_coi_6UPyON-qYiK55CwgeOKa4VnA2-ny1rIa3eBO8RpRLN_3ZgR5lY3U9cYgUF0GB3GqOG_6vtXIEZfbCmoabWSVvQtV85XQVhgMhnv6ezR7yfvGfl5_syFamIh2a7-AgDdFk23IxYGxzwgGklZCPBMGLvbmmnCjJ3tySDHZvCBDmg"/>
+</div>
+</div>
+</header>
+<!-- Board Canvas -->
+<main class="flex-1 overflow-x-auto overflow-y-hidden p-margin flex flex-col gap-md bg-background relative">
+<!-- Board Controls -->
+<div class="flex justify-between items-center flex-shrink-0">
+<div class="flex items-center gap-sm">
+<h2 class="text-headline-md font-headline-md text-on-surface">Main Support Queue</h2>
+<span class="bg-surface-container-high text-on-surface-variant text-label-sm font-label-sm px-sm py-[2px] rounded-full border border-outline-variant">14 Active</span>
+</div>
+<div class="flex items-center gap-sm">
+<button class="flex items-center gap-xs text-label-md font-label-md text-on-surface-variant hover:text-on-surface bg-surface border border-outline-variant px-sm py-[6px] rounded-DEFAULT">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+                        Filter
+                    </button>
+<button class="flex items-center gap-xs text-label-md font-label-md text-on-surface-variant hover:text-on-surface bg-surface border border-outline-variant px-sm py-[6px] rounded-DEFAULT">
+<span class="material-symbols-outlined text-[18px]">sort</span>
+                        Sort
+                    </button>
+</div>
+</div>
+<!-- Kanban Columns Container -->
+<div class="flex-1 flex gap-gutter h-full pb-sm items-start">
+<!-- Column 1: New -->
+<div class="flex flex-col bg-surface border border-outline-variant rounded-DEFAULT w-[340px] flex-shrink-0 max-h-full">
+<div class="p-sm border-b border-outline-variant flex justify-between items-center bg-surface-container-low rounded-t-DEFAULT">
+<div class="flex items-center gap-sm">
+<div class="w-[8px] h-[8px] rounded-full bg-primary"></div>
+<h3 class="text-label-md font-label-md text-on-surface font-bold uppercase tracking-wider">New</h3>
+<span class="text-label-sm font-label-sm text-on-surface-variant ml-xs">4</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-[18px]">more_horiz</span></button>
+</div>
+<div class="flex-1 overflow-y-auto p-sm flex flex-col gap-sm">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT p-md cursor-grab hover:bg-surface-container-low hover:border-outline transition-all shadow-[0_1px_2px_rgba(0,0,0,0.03)] flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<span class="text-label-sm font-label-sm text-on-surface-variant font-mono">INC-8492</span>
+<span class="bg-error-container text-on-error-container text-[10px] font-label-sm px-[6px] py-[2px] rounded-sm flex items-center gap-[2px]">
+<span class="material-symbols-outlined text-[12px]">warning</span>
+                                    SLA: 15m left
+                                </span>
+</div>
+<p class="text-body-md font-body-md text-on-surface font-medium leading-snug">Database connection timeout on production cluster alpha</p>
+<div class="flex justify-between items-end mt-xs">
+<div class="flex -space-x-2">
+<div class="w-[24px] h-[24px] rounded-full bg-surface-variant border border-outline-variant flex items-center justify-center text-label-sm text-on-surface-variant border-surface-container-lowest">UN</div>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant flex items-center gap-xs">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                                    10m ago
+                                </span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT p-md cursor-grab hover:bg-surface-container-low hover:border-outline transition-all shadow-[0_1px_2px_rgba(0,0,0,0.03)] flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<span class="text-label-sm font-label-sm text-on-surface-variant font-mono">REQ-8493</span>
+<span class="bg-secondary-container text-on-secondary-container text-[10px] font-label-sm px-[6px] py-[2px] rounded-sm">P3 - Normal</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface font-medium leading-snug">Request for new VPN access profile for external contractor</p>
+<div class="flex justify-between items-end mt-xs">
+<div class="flex -space-x-2">
+<div class="w-[24px] h-[24px] rounded-full bg-surface-variant border border-outline-variant flex items-center justify-center text-label-sm text-on-surface-variant border-surface-container-lowest">UN</div>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant flex items-center gap-xs">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                                    1h ago
+                                </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 2: In Progress -->
+<div class="flex flex-col bg-surface border border-outline-variant rounded-DEFAULT w-[340px] flex-shrink-0 max-h-full">
+<div class="p-sm border-b border-outline-variant flex justify-between items-center bg-surface-container-low rounded-t-DEFAULT">
+<div class="flex items-center gap-sm">
+<div class="w-[8px] h-[8px] rounded-full bg-surface-tint"></div>
+<h3 class="text-label-md font-label-md text-on-surface font-bold uppercase tracking-wider">In Progress</h3>
+<span class="text-label-sm font-label-sm text-on-surface-variant ml-xs">2</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-[18px]">more_horiz</span></button>
+</div>
+<div class="flex-1 overflow-y-auto p-sm flex flex-col gap-sm">
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest border-l-2 border-l-primary border-y border-r border-outline-variant rounded-DEFAULT p-md cursor-grab hover:bg-surface-container-low hover:border-outline transition-all shadow-[0_1px_2px_rgba(0,0,0,0.03)] flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<span class="text-label-sm font-label-sm text-on-surface-variant font-mono">INC-8488</span>
+<span class="bg-surface-variant text-on-surface text-[10px] font-label-sm px-[6px] py-[2px] rounded-sm flex items-center gap-[2px]">
+<span class="material-symbols-outlined text-[12px] text-primary">sync</span>
+                                    Active
+                                </span>
+</div>
+<p class="text-body-md font-body-md text-on-surface font-medium leading-snug">API Gateway returning 502 errors intermittently</p>
+<div class="flex justify-between items-end mt-xs">
+<div class="flex -space-x-2">
+<img alt="Assignee Avatar" class="w-[24px] h-[24px] rounded-full border-2 border-surface-container-lowest object-cover" data-alt="A small circular portrait of a professional woman with glasses in a well-lit corporate setting. The aesthetic is clean, bright, and modern, aligning with a light-mode enterprise UI. Soft, neutral background highlighting her competent and approachable expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBACQR3B8VrSYL3kWccQ9FiCi-gH05CMOWC-ACfSClm3rLBSIDLLqboETZexraDjyKXxCH4NMjrzVhGyG3ze3FXyDJqk4e_BhsflLULpv_nF_N6YbrfX-0EKbdd-5nzFgR92BTKxsl1i0I_BtP2Z0wvK-iyfK8Dz_rMqBjHu3zId_YSUgFfqZ1VllRjZKNdmRE6DuUaNEHztjG2Q1C6y_xyMM2MlKftik6oCkJqQdSieR-k3Y7fjcNmKknIYvdJ-y9cncOzTai3c9s"/>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Updated 5m ago</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 3: Blocked -->
+<div class="flex flex-col bg-surface border border-outline-variant rounded-DEFAULT w-[340px] flex-shrink-0 max-h-full opacity-90">
+<div class="p-sm border-b border-outline-variant flex justify-between items-center bg-surface-container-low rounded-t-DEFAULT">
+<div class="flex items-center gap-sm">
+<div class="w-[8px] h-[8px] rounded-full bg-error"></div>
+<h3 class="text-label-md font-label-md text-on-surface font-bold uppercase tracking-wider">Blocked</h3>
+<span class="text-label-sm font-label-sm text-on-surface-variant ml-xs">1</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-[18px]">more_horiz</span></button>
+</div>
+<div class="flex-1 overflow-y-auto p-sm flex flex-col gap-sm">
+<!-- Card 4 -->
+<div class="bg-surface-container-highest border border-outline-variant rounded-DEFAULT p-md cursor-grab hover:bg-surface-dim transition-all flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<span class="text-label-sm font-label-sm text-on-surface-variant font-mono">REQ-8470</span>
+<span class="bg-surface text-on-surface-variant border border-outline-variant text-[10px] font-label-sm px-[6px] py-[2px] rounded-sm flex items-center gap-[2px]">
+<span class="material-symbols-outlined text-[12px]">block</span>
+                                    Vendor
+                                </span>
+</div>
+<p class="text-body-md font-body-md text-on-surface font-medium leading-snug">Hardware replacement for workstation WS-104</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic line-clamp-1">Waiting on shipping confirmation from Dell...</p>
+<div class="flex justify-between items-end mt-xs">
+<div class="flex -space-x-2">
+<img alt="Assignee Avatar" class="w-[24px] h-[24px] rounded-full border-2 border-surface-container-highest object-cover" data-alt="A small circular portrait of a professional man with a slight beard in a bright, modern corporate environment. The image uses a light-mode enterprise aesthetic with soft, even lighting and a minimal background, conveying professionalism and reliability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAwefno58tr536T-vw13Mh0VbSwjZjCfwg9ZIRn4bIvSiKzoR55-Gz_Lr3ocBLH7S4vat7rl-DKV3AlKUMXRsSwOd8v-MqZ8Bn-Pn6kyXga8kqP3Q-ag1vrdtMfLNsiAVg2k4mqd3WB6nfOgcB5GWqVLNx1ZyC1jSQ1ESlpKRWWIGeGhbrLhYtQ46E7jqOhr6kU0WEMXWyhDcVDu8PnVJwwc-fiFspyGSJ3iJq5XnmVotMASLQc_YF8c3BA4iic--WLxr2ZCRFSEk"/>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Blocked 2d ago</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Add Column Placeholder -->
+<div class="flex flex-col w-[340px] flex-shrink-0">
+<button class="h-[40px] border border-dashed border-outline-variant rounded-DEFAULT flex items-center justify-center text-label-md font-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low hover:border-outline transition-colors gap-xs">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                        Add Lane
+                    </button>
+</div>
+</div>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,4117 @@
+{
+  "generatedAt": "2026-05-22T16:07:02.113Z",
+  "screenCount": 7,
+  "screens": {
+    "100eff93a3ec4ee0b642471a5a5a393d": {
+      "screenId": "100eff93a3ec4ee0b642471a5a5a393d",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-row",
+          "classes": [
+            "md:hidden",
+            "flex",
+            "justify-between",
+            "items-center",
+            "w-full",
+            "px-lg",
+            "py-sm",
+            "sticky",
+            "top-0",
+            "z-40"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "aside",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "md:flex",
+            "flex-col",
+            "h-screen",
+            "w-64",
+            "border-r",
+            "border-outline-variant",
+            "bg-surface",
+            "sticky",
+            "top-0"
+          ],
+          "childCount": 6
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "flex",
+            "flex-col",
+            "min-w-0",
+            "p-lg",
+            "md:p-xl",
+            "lg:px-[40px]",
+            "xl:px-[60px]",
+            "2xl:px-[120px]"
+          ],
+          "childCount": 60
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "notifications",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:bg-surface-container-high",
+            "p-sm",
+            "rounded-full",
+            "transition-colors",
+            "scale-95",
+            "duration-100"
+          ],
+          "icon": "notifications",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Create Ticket",
+          "classes": [
+            "bg-primary-container",
+            "text-on-primary",
+            "font-label-md",
+            "px-md",
+            "py-sm",
+            "rounded",
+            "hover:opacity-90",
+            "transition-opacity"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Last 24 Hours",
+          "classes": [
+            "flex-1",
+            "sm:flex-none",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-xs",
+            "px-md",
+            "py-sm",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "font-label-md",
+            "text-label-md",
+            "text-on-surface",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Export Summary",
+          "classes": [
+            "flex-1",
+            "sm:flex-none",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-xs",
+            "px-md",
+            "py-sm",
+            "bg-primary-container",
+            "text-on-primary",
+            "rounded",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-primary-fixed-variant",
+            "hover:text-on-primary-fixed-variant",
+            "transition-colors"
+          ],
+          "icon": "download",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "more_vert",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-on-surface"
+          ],
+          "icon": "more_vert",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "SurfaceGate Desk",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "confirmation_number",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "group_work",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "engineering",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "insights",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "View All",
+          "href": "#",
+          "classes": [
+            "font-label-sm",
+            "text-label-sm",
+            "text-primary",
+            "hover:underline"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "TKT-8921",
+          "href": "#",
+          "classes": [
+            "text-primary",
+            "hover:underline"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "TKT-8900",
+          "href": "#",
+          "classes": [
+            "text-primary",
+            "hover:underline"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "TKT-8854",
+          "href": "#",
+          "classes": [
+            "text-primary",
+            "hover:underline"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "notifications",
+        "confirmation_number",
+        "group_work",
+        "engineering",
+        "insights",
+        "settings",
+        "help",
+        "filter_list",
+        "download",
+        "verified_user",
+        "arrow_downward",
+        "dynamic_feed",
+        "arrow_upward",
+        "timer",
+        "horizontal_rule",
+        "headset_mic",
+        "more_vert",
+        "warning",
+        "check_circle",
+        "login",
+        "escalator_warning"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDg9jkpUxR2P-YSJVm3vA8SnUu7CEHGkd3lD6HSVsck3ZaTnqdEU9y1-rSFZjeVhWBbsetrpScn8585Mmz4xgpX7lkjbYKTn_R3VPehs1NTxM8SgjjMEZD9awfC47LHkkjxNVSn0YfmkZ-5mMxBHX",
+          "alt": "User Avatar"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "on-tertiary-fixed-variant": "#3f465c",
+        "error": "#ba1a1a",
+        "surface-container-high": "#e6e8ea",
+        "tertiary-fixed": "#dae2fd",
+        "tertiary-container": "#3d4459",
+        "surface-dim": "#d8dadc",
+        "secondary": "#505f76",
+        "surface-container-lowest": "#ffffff",
+        "tertiary": "#262e42",
+        "on-tertiary": "#ffffff",
+        "surface": "#f7f9fb",
+        "outline": "#737781",
+        "on-secondary-fixed": "#0b1c30",
+        "error-container": "#ffdad6",
+        "surface-variant": "#e0e3e5",
+        "outline-variant": "#c3c6d1",
+        "on-tertiary-container": "#aab2cb",
+        "on-primary-container": "#8fb3f6",
+        "on-error-container": "#93000a",
+        "on-secondary-container": "#54647a",
+        "primary-fixed": "#d7e2ff",
+        "surface-container-low": "#f2f4f6",
+        "on-background": "#191c1e",
+        "inverse-on-surface": "#eff1f3",
+        "surface-container-highest": "#e0e3e5",
+        "secondary-fixed-dim": "#b7c8e1",
+        "background": "#f7f9fb",
+        "on-surface": "#191c1e",
+        "surface-tint": "#395e9b",
+        "inverse-primary": "#abc7ff",
+        "primary-fixed-dim": "#abc7ff",
+        "on-secondary-fixed-variant": "#38485d",
+        "on-tertiary-fixed": "#131b2e",
+        "surface-container": "#eceef0",
+        "primary": "#002d62",
+        "on-error": "#ffffff",
+        "surface-bright": "#f7f9fb",
+        "inverse-surface": "#2d3133",
+        "tertiary-fixed-dim": "#bec6e0",
+        "on-primary-fixed": "#001b3f",
+        "primary-container": "#1a4480",
+        "on-primary-fixed-variant": "#1d4682",
+        "secondary-fixed": "#d3e4fe",
+        "on-primary": "#ffffff",
+        "secondary-container": "#d0e1fb",
+        "on-secondary": "#ffffff",
+        "on-surface-variant": "#434750"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Inter"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "icon": "confirmation_number",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "icon": "group_work",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "icon": "engineering",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "icon": "help",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "View All",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "TKT-8921",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "TKT-8900",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "TKT-8854",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "icon": "notifications",
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "Create Ticket",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Last 24 Hours",
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Export Summary",
+          "icon": "download",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "more_vert",
+          "icon": "more_vert",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "SurfaceGate Desk",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "SurfaceGate Desk",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "icon": "notifications",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Create Ticket",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "icon": "confirmation_number",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "icon": "group_work",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "icon": "engineering",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Insights - SurfaceGate Desk"
+    },
+    "18b770b61b3a487cafa7c30c5a66d4c1": {
+      "screenId": "18b770b61b3a487cafa7c30c5a66d4c1",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "aside",
+          "layout": "flex-col",
+          "classes": [
+            "bg-surface",
+            "h-screen",
+            "w-64",
+            "border-r",
+            "border-outline-variant",
+            "flex",
+            "flex-col",
+            "sticky",
+            "top-0",
+            "py-margin"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "flex",
+            "justify-between",
+            "items-center",
+            "w-full",
+            "px-lg",
+            "py-sm",
+            "sticky",
+            "top-0",
+            "z-40",
+            "bg-surface-container-lowest"
+          ],
+          "childCount": 4
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "overflow-x-auto",
+            "overflow-y-hidden",
+            "p-margin",
+            "flex",
+            "flex-col",
+            "gap-md",
+            "bg-background",
+            "relative"
+          ],
+          "childCount": 38
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "menu",
+          "classes": [
+            "md:hidden",
+            "text-on-surface-variant",
+            "hover:text-on-surface"
+          ],
+          "icon": "menu",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "hover:bg-surface-container-high",
+            "rounded-full",
+            "p-xs",
+            "transition-colors",
+            "relative"
+          ],
+          "icon": "notifications",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Create Ticket",
+          "classes": [
+            "bg-primary",
+            "text-on-primary",
+            "text-label-md",
+            "font-label-md",
+            "px-md",
+            "py-[8px]",
+            "rounded-DEFAULT",
+            "hover:bg-primary-container",
+            "hover:text-on-primary-container",
+            "transition-colors",
+            "shadow-sm",
+            "active:scale-95",
+            "duration-100",
+            "flex",
+            "items-center",
+            "gap-xs"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-xs",
+            "text-label-md",
+            "font-label-md",
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "bg-surface",
+            "border",
+            "border-outline-variant",
+            "px-sm",
+            "py-[6px]",
+            "rounded-DEFAULT"
+          ],
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "sort",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-xs",
+            "text-label-md",
+            "font-label-md",
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "bg-surface",
+            "border",
+            "border-outline-variant",
+            "px-sm",
+            "py-[6px]",
+            "rounded-DEFAULT"
+          ],
+          "icon": "sort",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "more_horiz",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-on-surface"
+          ],
+          "icon": "more_horiz",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Lane",
+          "classes": [
+            "h-[40px]",
+            "border",
+            "border-dashed",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-label-md",
+            "font-label-md",
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "hover:bg-surface-container-low",
+            "hover:border-outline",
+            "transition-colors",
+            "gap-xs"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search tickets, IDs, or assignees...",
+          "placeholder": "Search tickets, IDs, or assignees...",
+          "name": "",
+          "classes": [
+            "w-full",
+            "bg-surface",
+            "pl-[36px]",
+            "pr-sm",
+            "py-[6px]",
+            "text-body-md",
+            "font-body-md",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "placeholder:text-on-surface-variant",
+            "transition-shadow"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "confirmation_number",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "group_work",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "engineering",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "insights",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "hub",
+        "confirmation_number",
+        "group_work",
+        "engineering",
+        "insights",
+        "settings",
+        "help",
+        "menu",
+        "search",
+        "notifications",
+        "add",
+        "filter_list",
+        "sort",
+        "more_horiz",
+        "warning",
+        "schedule",
+        "sync",
+        "block"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuD9zej-t66jPc9wPLLivcsl5PptotR9gD4pwAg2-WS6SJVGtoppqsRnQL-qioul0_t4WEOPJZewmRtrEIjDbs2CLkkod3-D_coi_6UPyON-qYiK55CwgeOKa4VnA2-ny1rIa3eBO8RpRLN_3ZgR5l",
+          "alt": "User Avatar"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBACQR3B8VrSYL3kWccQ9FiCi-gH05CMOWC-ACfSClm3rLBSIDLLqboETZexraDjyKXxCH4NMjrzVhGyG3ze3FXyDJqk4e_BhsflLULpv_nF_N6YbrfX-0EKbdd-5nzFgR92BTKxsl1i0I_BtP2Z0",
+          "alt": "Assignee Avatar"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDAwefno58tr536T-vw13Mh0VbSwjZjCfwg9ZIRn4bIvSiKzoR55-Gz_Lr3ocBLH7S4vat7rl-DKV3AlKUMXRsSwOd8v-MqZ8Bn-Pn6kyXga8kqP3Q-ag1vrdtMfLNsiAVg2k4mqd3WB6nfOgcB5G",
+          "alt": "Assignee Avatar"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "on-tertiary-fixed-variant": "#3f465c",
+        "error": "#ba1a1a",
+        "surface-container-high": "#e6e8ea",
+        "tertiary-fixed": "#dae2fd",
+        "tertiary-container": "#3d4459",
+        "surface-dim": "#d8dadc",
+        "secondary": "#505f76",
+        "surface-container-lowest": "#ffffff",
+        "tertiary": "#262e42",
+        "on-tertiary": "#ffffff",
+        "surface": "#f7f9fb",
+        "outline": "#737781",
+        "on-secondary-fixed": "#0b1c30",
+        "error-container": "#ffdad6",
+        "surface-variant": "#e0e3e5",
+        "outline-variant": "#c3c6d1",
+        "on-tertiary-container": "#aab2cb",
+        "on-primary-container": "#8fb3f6",
+        "on-error-container": "#93000a",
+        "on-secondary-container": "#54647a",
+        "primary-fixed": "#d7e2ff",
+        "surface-container-low": "#f2f4f6",
+        "on-background": "#191c1e",
+        "inverse-on-surface": "#eff1f3",
+        "surface-container-highest": "#e0e3e5",
+        "secondary-fixed-dim": "#b7c8e1",
+        "background": "#f7f9fb",
+        "on-surface": "#191c1e",
+        "surface-tint": "#395e9b",
+        "inverse-primary": "#abc7ff",
+        "primary-fixed-dim": "#abc7ff",
+        "on-secondary-fixed-variant": "#38485d",
+        "on-tertiary-fixed": "#131b2e",
+        "surface-container": "#eceef0",
+        "primary": "#002d62",
+        "on-error": "#ffffff",
+        "surface-bright": "#f7f9fb",
+        "inverse-surface": "#2d3133",
+        "tertiary-fixed-dim": "#bec6e0",
+        "on-primary-fixed": "#001b3f",
+        "primary-container": "#1a4480",
+        "on-primary-fixed-variant": "#1d4682",
+        "secondary-fixed": "#d3e4fe",
+        "on-primary": "#ffffff",
+        "secondary-container": "#d0e1fb",
+        "on-secondary": "#ffffff",
+        "on-surface-variant": "#434750"
+      },
+      "fonts": [
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "icon": "confirmation_number",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "icon": "group_work",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "icon": "engineering",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "icon": "help",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "menu",
+          "icon": "menu",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "icon": "notifications",
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "Create Ticket",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "sort",
+          "icon": "sort",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "more_horiz",
+          "icon": "more_horiz",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Lane",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "input",
+          "label": "Search tickets, IDs, or assignees...",
+          "type": "text",
+          "placeholder": "Search tickets, IDs, or assignees...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "icon": "confirmation_number",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "icon": "group_work",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "icon": "engineering",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Queue and Status Management - SurfaceGate Desk"
+    },
+    "1c7aec3ef6054cf995d16bace7745994": {
+      "screenId": "1c7aec3ef6054cf995d16bace7745994",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "md:flex",
+            "flex-col",
+            "h-screen",
+            "w-64",
+            "border-r",
+            "border-outline-variant",
+            "bg-surface",
+            "sticky",
+            "top-0"
+          ],
+          "childCount": 8
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "flex",
+            "justify-between",
+            "items-center",
+            "w-full",
+            "px-lg",
+            "py-sm",
+            "sticky",
+            "top-0",
+            "z-40",
+            "bg-surface-container-lowest"
+          ],
+          "childCount": 5
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "p-lg",
+            "flex",
+            "flex-col",
+            "lg:flex-row",
+            "gap-lg",
+            "overflow-hidden"
+          ],
+          "childCount": 40
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "notifications",
+          "classes": [
+            "material-symbols-outlined",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-high",
+            "rounded",
+            "p-xs",
+            "scale-95",
+            "duration-100"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Create Ticket",
+          "classes": [
+            "bg-primary",
+            "text-on-primary",
+            "px-md",
+            "py-sm",
+            "rounded",
+            "text-label-md",
+            "font-label-md",
+            "hover:bg-primary-container",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-xs",
+            "px-sm",
+            "py-xs",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "text-label-md",
+            "font-label-md",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-high",
+            "transition-colors"
+          ],
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "sort",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-xs",
+            "px-sm",
+            "py-xs",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "text-label-md",
+            "font-label-md",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-high",
+            "transition-colors"
+          ],
+          "icon": "sort",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "more_vert",
+          "classes": [
+            "material-symbols-outlined",
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "opacity-0",
+            "group-hover:opacity-100",
+            "transition-opacity"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "SurfaceGate",
+          "classes": [],
+          "icon": "desk",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search agents or tickets...",
+          "placeholder": "Search agents or tickets...",
+          "name": "",
+          "classes": [
+            "w-full",
+            "pl-[36px]",
+            "pr-sm",
+            "py-xs",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "bg-surface",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "outline-none",
+            "text-body-sm",
+            "font-body-sm"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "confirmation_number",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "group_work",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "engineering",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "insights",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "#INC-4092",
+          "href": "#",
+          "classes": [
+            "text-primary",
+            "hover:underline",
+            "font-medium"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "#INC-4088",
+          "href": "#",
+          "classes": [
+            "text-primary",
+            "hover:underline",
+            "font-medium"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "desk",
+        "confirmation_number",
+        "group_work",
+        "engineering",
+        "insights",
+        "settings",
+        "help",
+        "search",
+        "filter_list",
+        "sort",
+        "warning",
+        "schedule",
+        "swap_horiz"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "on-tertiary-fixed-variant": "#3f465c",
+        "error": "#ba1a1a",
+        "surface-container-high": "#e6e8ea",
+        "tertiary-fixed": "#dae2fd",
+        "tertiary-container": "#3d4459",
+        "surface-dim": "#d8dadc",
+        "secondary": "#505f76",
+        "surface-container-lowest": "#ffffff",
+        "tertiary": "#262e42",
+        "on-tertiary": "#ffffff",
+        "surface": "#f7f9fb",
+        "outline": "#737781",
+        "on-secondary-fixed": "#0b1c30",
+        "error-container": "#ffdad6",
+        "surface-variant": "#e0e3e5",
+        "outline-variant": "#c3c6d1",
+        "on-tertiary-container": "#aab2cb",
+        "on-primary-container": "#8fb3f6",
+        "on-error-container": "#93000a",
+        "on-secondary-container": "#54647a",
+        "primary-fixed": "#d7e2ff",
+        "surface-container-low": "#f2f4f6",
+        "on-background": "#191c1e",
+        "inverse-on-surface": "#eff1f3",
+        "surface-container-highest": "#e0e3e5",
+        "secondary-fixed-dim": "#b7c8e1",
+        "background": "#f7f9fb",
+        "on-surface": "#191c1e",
+        "surface-tint": "#395e9b",
+        "inverse-primary": "#abc7ff",
+        "primary-fixed-dim": "#abc7ff",
+        "on-secondary-fixed-variant": "#38485d",
+        "on-tertiary-fixed": "#131b2e",
+        "surface-container": "#eceef0",
+        "primary": "#002d62",
+        "on-error": "#ffffff",
+        "surface-bright": "#f7f9fb",
+        "inverse-surface": "#2d3133",
+        "tertiary-fixed-dim": "#bec6e0",
+        "on-primary-fixed": "#001b3f",
+        "primary-container": "#1a4480",
+        "on-primary-fixed-variant": "#1d4682",
+        "secondary-fixed": "#d3e4fe",
+        "on-primary": "#ffffff",
+        "secondary-container": "#d0e1fb",
+        "on-secondary": "#ffffff",
+        "on-surface-variant": "#434750"
+      },
+      "fonts": [
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 3,
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "icon": "confirmation_number",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "icon": "group_work",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "icon": "engineering",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "icon": "help",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "#INC-4092",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "#INC-4088",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "icon": null,
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "Create Ticket",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "sort",
+          "icon": "sort",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "more_vert",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "SurfaceGate",
+          "icon": "desk",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search agents or tickets...",
+          "type": "text",
+          "placeholder": "Search agents or tickets...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "SurfaceGate",
+          "icon": "desk",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "icon": "confirmation_number",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "icon": "group_work",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "icon": "engineering",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "icon": "help",
+          "route": "#",
+          "active": false
+        }
+      ],
+      "title": "Agent Workload - SurfaceGate Desk"
+    },
+    "2f12190f7367422fbacd3ea4d0156ab7": {
+      "screenId": "2f12190f7367422fbacd3ea4d0156ab7",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "h-screen",
+            "w-64",
+            "border-r",
+            "border-outline-variant",
+            "bg-surface",
+            "hidden",
+            "md:flex",
+            "flex-col",
+            "h-full",
+            "sticky"
+          ],
+          "childCount": 5
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "flex",
+            "flex-col",
+            "h-screen",
+            "overflow-hidden",
+            "min-w-0"
+          ],
+          "childCount": 105
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "menu",
+          "classes": [
+            "md:hidden",
+            "p-xs",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-high",
+            "rounded-DEFAULT",
+            "mr-sm"
+          ],
+          "icon": "menu",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "classes": [
+            "w-8",
+            "h-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-DEFAULT",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "hover:bg-surface-container-high",
+            "transition-colors"
+          ],
+          "icon": "notifications",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Create Ticket",
+          "classes": [
+            "bg-primary",
+            "text-on-primary",
+            "h-8",
+            "px-md",
+            "rounded-DEFAULT",
+            "text-label-md",
+            "font-label-md",
+            "hover:bg-primary-container",
+            "transition-colors",
+            "shadow-sm",
+            "whitespace-nowrap"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "classes": [
+            "h-7",
+            "px-sm",
+            "text-label-sm",
+            "font-label-sm",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "text-on-surface",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "gap-xs"
+          ],
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "sort",
+          "classes": [
+            "h-7",
+            "px-sm",
+            "text-label-sm",
+            "font-label-sm",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "text-on-surface",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "gap-xs"
+          ],
+          "icon": "sort",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "chevron_left",
+          "classes": [
+            "w-6",
+            "h-6",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-DEFAULT",
+            "border",
+            "border-outline-variant",
+            "hover:bg-surface-container-high",
+            "disabled:opacity-50"
+          ],
+          "icon": "chevron_left",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "chevron_right",
+          "classes": [
+            "w-6",
+            "h-6",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-DEFAULT",
+            "border",
+            "border-outline-variant",
+            "hover:bg-surface-container-high"
+          ],
+          "icon": "chevron_right",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "content_copy",
+          "classes": [
+            "w-7",
+            "h-7",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-DEFAULT",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-high",
+            "hover:text-on-surface",
+            "border",
+            "border-transparent",
+            "hover:border-outline-variant",
+            "transition-all"
+          ],
+          "icon": "content_copy",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "open_in_new",
+          "classes": [
+            "w-7",
+            "h-7",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-DEFAULT",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-high",
+            "hover:text-on-surface",
+            "border",
+            "border-transparent",
+            "hover:border-outline-variant",
+            "transition-all"
+          ],
+          "icon": "open_in_new",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Assign to me",
+          "classes": [
+            "h-7",
+            "px-sm",
+            "text-label-sm",
+            "font-label-sm",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "text-on-surface",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "gap-xs",
+            "whitespace-nowrap"
+          ],
+          "icon": "person_add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Change Status",
+          "classes": [
+            "h-7",
+            "px-sm",
+            "text-label-sm",
+            "font-label-sm",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "text-on-surface",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "gap-xs",
+            "whitespace-nowrap"
+          ],
+          "icon": "swap_horiz",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "attach_file",
+          "classes": [
+            "w-6",
+            "h-6",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-DEFAULT",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-high"
+          ],
+          "icon": "attach_file",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "send",
+          "classes": [
+            "w-6",
+            "h-6",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-DEFAULT",
+            "bg-primary",
+            "text-on-primary",
+            "hover:bg-primary-container"
+          ],
+          "icon": "send",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "dns",
+          "classes": [],
+          "icon": "dns",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "SurfaceGate Desk",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search tickets, agents, or knowledge base...",
+          "placeholder": "Search tickets, agents, or knowledge base...",
+          "name": "",
+          "classes": [
+            "w-full",
+            "h-8",
+            "pl-8",
+            "pr-sm",
+            "py-xs",
+            "text-body-sm",
+            "font-body-sm",
+            "bg-surface",
+            "rounded-DEFAULT",
+            "border",
+            "border-outline-variant",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-2",
+            "focus:ring-primary-fixed-dim",
+            "transition-shadow",
+            "placeholder-on-surface-variant",
+            "text-on-surface"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "textarea",
+          "label": "Add an internal note or reply...",
+          "placeholder": "Add an internal note or reply...",
+          "name": "",
+          "classes": [
+            "w-full",
+            "text-body-sm",
+            "font-body-sm",
+            "bg-surface",
+            "rounded-DEFAULT",
+            "border",
+            "border-outline-variant",
+            "p-sm",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-2",
+            "focus:ring-primary-fixed-dim",
+            "resize-none",
+            "custom-scrollbar",
+            "pb-lg"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "confirmation_number",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "group_work",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "engineering",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "insights",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "dns",
+        "confirmation_number",
+        "group_work",
+        "engineering",
+        "insights",
+        "settings",
+        "help",
+        "menu",
+        "search",
+        "notifications",
+        "inbox",
+        "warning",
+        "person_off",
+        "timer",
+        "filter_list",
+        "sort",
+        "arrow_upward",
+        "remove",
+        "keyboard_double_arrow_up",
+        "arrow_downward",
+        "chevron_left",
+        "chevron_right",
+        "content_copy",
+        "open_in_new",
+        "person",
+        "schedule",
+        "person_add",
+        "swap_horiz",
+        "smart_toy",
+        "attach_file",
+        "send"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "on-tertiary-fixed-variant": "#3f465c",
+        "error": "#ba1a1a",
+        "surface-container-high": "#e6e8ea",
+        "tertiary-fixed": "#dae2fd",
+        "tertiary-container": "#3d4459",
+        "surface-dim": "#d8dadc",
+        "secondary": "#505f76",
+        "surface-container-lowest": "#ffffff",
+        "tertiary": "#262e42",
+        "on-tertiary": "#ffffff",
+        "surface": "#f7f9fb",
+        "outline": "#737781",
+        "on-secondary-fixed": "#0b1c30",
+        "error-container": "#ffdad6",
+        "surface-variant": "#e0e3e5",
+        "outline-variant": "#c3c6d1",
+        "on-tertiary-container": "#aab2cb",
+        "on-primary-container": "#8fb3f6",
+        "on-error-container": "#93000a",
+        "on-secondary-container": "#54647a",
+        "primary-fixed": "#d7e2ff",
+        "surface-container-low": "#f2f4f6",
+        "on-background": "#191c1e",
+        "inverse-on-surface": "#eff1f3",
+        "surface-container-highest": "#e0e3e5",
+        "secondary-fixed-dim": "#b7c8e1",
+        "background": "#f7f9fb",
+        "on-surface": "#191c1e",
+        "surface-tint": "#395e9b",
+        "inverse-primary": "#abc7ff",
+        "primary-fixed-dim": "#abc7ff",
+        "on-secondary-fixed-variant": "#38485d",
+        "on-tertiary-fixed": "#131b2e",
+        "surface-container": "#eceef0",
+        "primary": "#002d62",
+        "on-error": "#ffffff",
+        "surface-bright": "#f7f9fb",
+        "inverse-surface": "#2d3133",
+        "tertiary-fixed-dim": "#bec6e0",
+        "on-primary-fixed": "#001b3f",
+        "primary-container": "#1a4480",
+        "on-primary-fixed-variant": "#1d4682",
+        "secondary-fixed": "#d3e4fe",
+        "on-primary": "#ffffff",
+        "secondary-container": "#d0e1fb",
+        "on-secondary": "#ffffff",
+        "on-surface-variant": "#434750"
+      },
+      "fonts": [
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 2,
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "icon": "confirmation_number",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "icon": "group_work",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "icon": "engineering",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "icon": "help",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "menu",
+          "icon": "menu",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "icon": "notifications",
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "Create Ticket",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "sort",
+          "icon": "sort",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "chevron_left",
+          "icon": "chevron_left",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "chevron_right",
+          "icon": "chevron_right",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "content_copy",
+          "icon": "content_copy",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "open_in_new",
+          "icon": "open_in_new",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Assign to me",
+          "icon": "person_add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Change Status",
+          "icon": "swap_horiz",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "attach_file",
+          "icon": "attach_file",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "send",
+          "icon": "send",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "dns",
+          "icon": "dns",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "SurfaceGate Desk",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search tickets, agents, or knowledge base...",
+          "type": "text",
+          "placeholder": "Search tickets, agents, or knowledge base...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "Add an internal note or reply...",
+          "type": "textarea",
+          "placeholder": "Add an internal note or reply...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "dns",
+          "icon": "dns",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "SurfaceGate Desk",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "icon": "confirmation_number",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "icon": "group_work",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "icon": "engineering",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "icon": "help",
+          "route": "#",
+          "active": false
+        }
+      ],
+      "title": "Ticket Operations - SurfaceGate Desk"
+    },
+    "3ca85751798f4e36bda531467856bcc5": {
+      "screenId": "3ca85751798f4e36bda531467856bcc5",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "block",
+          "classes": [
+            "bg-surface-container-low",
+            "dark:bg-surface-container-lowest",
+            "text-primary",
+            "dark:text-primary-fixed-dim",
+            "docked",
+            "h-screen",
+            "left-0",
+            "w-[240px]",
+            "border-r",
+            "border-outline-variant"
+          ],
+          "childCount": 5
+        },
+        {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "bg-surface",
+            "dark:bg-surface-dim",
+            "text-primary",
+            "dark:text-primary-fixed-dim",
+            "docked",
+            "full-width",
+            "top-0",
+            "border-b",
+            "border-outline-variant",
+            "dark:border-outline"
+          ],
+          "childCount": 7
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "overflow-y-auto",
+            "p-4",
+            "md:p-lg"
+          ],
+          "childCount": 31
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "menu",
+          "classes": [
+            "md:hidden",
+            "p-1",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-colors",
+            "cursor-pointer",
+            "active:opacity-80",
+            "transition-opacity"
+          ],
+          "icon": "menu",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "classes": [
+            "p-1",
+            "hover:bg-surface-container-low",
+            "dark:hover:bg-surface-container-high",
+            "transition-colors",
+            "rounded",
+            "cursor-pointer",
+            "active:opacity-80",
+            "transition-opacity",
+            "relative",
+            "group"
+          ],
+          "icon": "notifications",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "help_outline",
+          "classes": [
+            "p-1",
+            "hover:bg-surface-container-low",
+            "dark:hover:bg-surface-container-high",
+            "transition-colors",
+            "rounded",
+            "cursor-pointer",
+            "active:opacity-80",
+            "transition-opacity",
+            "group"
+          ],
+          "icon": "help_outline",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Create Ticket",
+          "classes": [
+            "hidden",
+            "md:flex",
+            "items-center",
+            "justify-center",
+            "bg-primary-container",
+            "text-on-primary-container",
+            "font-label-md",
+            "text-label-md",
+            "px-3",
+            "py-1.5",
+            "rounded",
+            "hover:bg-primary-container/90",
+            "transition-colors",
+            "cursor-pointer",
+            "active:opacity-80"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Reset Settings",
+          "classes": [
+            "px-3",
+            "py-1.5",
+            "border",
+            "border-error",
+            "text-error",
+            "rounded",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-error-container/30",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "Discard",
+          "classes": [
+            "px-4",
+            "py-2",
+            "border",
+            "border-outline-variant",
+            "text-on-surface-variant",
+            "rounded",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Changes",
+          "classes": [
+            "px-4",
+            "py-2",
+            "bg-primary-container",
+            "text-on-primary-container",
+            "rounded",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-primary-container/90",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "gap-2"
+          ],
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "desk",
+          "classes": [],
+          "icon": "desk",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "SurfaceGate Operational Hub",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search settings...",
+          "placeholder": "Search settings...",
+          "name": "",
+          "classes": [
+            "bg-transparent",
+            "border-none",
+            "p-0",
+            "focus:ring-0",
+            "text-sm",
+            "w-48",
+            "font-body-sm",
+            "text-body-sm",
+            "placeholder:text-on-surface-variant"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "landing-page",
+          "placeholder": "",
+          "name": "landing-page",
+          "classes": [
+            "w-full",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "bg-surface",
+            "p-2",
+            "font-body-sm",
+            "text-body-sm",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary/30",
+            "outline-none",
+            "transition-all"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "ticket-sort",
+          "placeholder": "",
+          "name": "ticket-sort",
+          "classes": [
+            "w-full",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "bg-surface",
+            "p-2",
+            "font-body-sm",
+            "text-body-sm",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary/30",
+            "outline-none",
+            "transition-all"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "radio",
+          "label": "density",
+          "placeholder": "",
+          "name": "density",
+          "classes": [
+            "peer",
+            "sr-only"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "confirmation_number",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "assignment",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "group",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "monitoring",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "contact_support",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "desk",
+        "confirmation_number",
+        "assignment",
+        "group",
+        "monitoring",
+        "settings",
+        "contact_support",
+        "menu",
+        "chevron_right",
+        "search",
+        "notifications",
+        "help_outline",
+        "dashboard",
+        "tune",
+        "admin_panel_settings",
+        "check_circle",
+        "save"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAjWACim8DOmomVsBY2B0YIe9bCj1cJECPT9Aqel6dlF0W_SLzd5KeH8aXgtsgswsl6wwTyv2Kp3-CmJa8MS5OL0kHmadZKxBuqVfkpomu30SMO1MnlGPOdRMZC8U9V_qRlHgOJhr-XenWmCQz0GO",
+          "alt": "Agent Profile"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "on-tertiary-fixed-variant": "#3f465c",
+        "error": "#ba1a1a",
+        "surface-container-high": "#e6e8ea",
+        "tertiary-fixed": "#dae2fd",
+        "tertiary-container": "#3d4459",
+        "surface-dim": "#d8dadc",
+        "secondary": "#505f76",
+        "surface-container-lowest": "#ffffff",
+        "tertiary": "#262e42",
+        "on-tertiary": "#ffffff",
+        "surface": "#f7f9fb",
+        "outline": "#737781",
+        "on-secondary-fixed": "#0b1c30",
+        "error-container": "#ffdad6",
+        "surface-variant": "#e0e3e5",
+        "outline-variant": "#c3c6d1",
+        "on-tertiary-container": "#aab2cb",
+        "on-primary-container": "#8fb3f6",
+        "on-error-container": "#93000a",
+        "on-secondary-container": "#54647a",
+        "primary-fixed": "#d7e2ff",
+        "surface-container-low": "#f2f4f6",
+        "on-background": "#191c1e",
+        "inverse-on-surface": "#eff1f3",
+        "surface-container-highest": "#e0e3e5",
+        "secondary-fixed-dim": "#b7c8e1",
+        "background": "#f7f9fb",
+        "on-surface": "#191c1e",
+        "surface-tint": "#395e9b",
+        "inverse-primary": "#abc7ff",
+        "primary-fixed-dim": "#abc7ff",
+        "on-secondary-fixed-variant": "#38485d",
+        "on-tertiary-fixed": "#131b2e",
+        "surface-container": "#eceef0",
+        "primary": "#002d62",
+        "on-error": "#ffffff",
+        "surface-bright": "#f7f9fb",
+        "inverse-surface": "#2d3133",
+        "tertiary-fixed-dim": "#bec6e0",
+        "on-primary-fixed": "#001b3f",
+        "primary-container": "#1a4480",
+        "on-primary-fixed-variant": "#1d4682",
+        "secondary-fixed": "#d3e4fe",
+        "on-primary": "#ffffff",
+        "secondary-container": "#d0e1fb",
+        "on-secondary": "#ffffff",
+        "on-surface-variant": "#434750"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Inter"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "2"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "icon": "confirmation_number",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "icon": "assignment",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "icon": "group",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "monitoring",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "icon": "contact_support",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "menu",
+          "icon": "menu",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "icon": "notifications",
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "help_outline",
+          "icon": "help_outline",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Create Ticket",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Reset Settings",
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "Discard",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Changes",
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "desk",
+          "icon": "desk",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "SurfaceGate Operational Hub",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search settings...",
+          "type": "text",
+          "placeholder": "Search settings...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "landing-page",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "ticket-sort",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "density",
+          "type": "radio",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "desk",
+          "icon": "desk",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "SurfaceGate Operational Hub",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "icon": "confirmation_number",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "icon": "assignment",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "icon": "group",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "monitoring",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "icon": "contact_support",
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Settings and Preferences - SurfaceGate Desk"
+    },
+    "44fd8a8c36b1447094c42f0cc70538c4": {
+      "screenId": "44fd8a8c36b1447094c42f0cc70538c4",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "aside",
+          "layout": "block",
+          "classes": [
+            "bg-surface-container-low",
+            "dark:bg-surface-container-lowest",
+            "text-primary",
+            "dark:text-primary-fixed-dim",
+            "border-r",
+            "border-outline-variant",
+            "dark:border-outline",
+            "docked",
+            "h-screen",
+            "left-0"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "bg-surface",
+            "dark:bg-surface-dim",
+            "text-primary",
+            "dark:text-primary-fixed-dim",
+            "border-b",
+            "border-outline-variant",
+            "dark:border-outline",
+            "docked",
+            "full-width",
+            "top-0"
+          ],
+          "childCount": 5
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "overflow-y-auto",
+            "p-lg",
+            "bg-surface-container-lowest",
+            "flex",
+            "items-center",
+            "justify-center"
+          ],
+          "childCount": 4
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create Ticket",
+          "classes": [
+            "bg-primary-container",
+            "text-on-primary-container",
+            "font-label-md",
+            "text-label-md",
+            "px-4",
+            "py-1.5",
+            "rounded",
+            "hover:bg-opacity-90",
+            "transition-colors",
+            "hidden",
+            "sm:block"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "classes": [
+            "p-1",
+            "rounded-full",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-low",
+            "dark:hover:bg-surface-container-high",
+            "transition-colors",
+            "cursor-pointer",
+            "active:opacity-80"
+          ],
+          "icon": "notifications",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "help_outline",
+          "classes": [
+            "p-1",
+            "rounded-full",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-low",
+            "dark:hover:bg-surface-container-high",
+            "transition-colors",
+            "cursor-pointer",
+            "active:opacity-80"
+          ],
+          "icon": "help_outline",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Clear All Filters",
+          "classes": [
+            "px-md",
+            "py-sm",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline",
+            "font-label-md",
+            "text-label-md",
+            "text-on-surface",
+            "rounded",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Retry Load",
+          "classes": [
+            "px-md",
+            "py-sm",
+            "bg-primary",
+            "text-on-primary",
+            "font-label-md",
+            "text-label-md",
+            "rounded",
+            "hover:bg-opacity-90",
+            "transition-colors",
+            "shadow-sm"
+          ],
+          "icon": null,
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "+ Create New Ticket",
+          "classes": [
+            "text-primary",
+            "font-label-md",
+            "text-label-md",
+            "hover:underline",
+            "bg-transparent"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search tickets...",
+          "placeholder": "Search tickets...",
+          "name": "",
+          "classes": [
+            "w-full",
+            "h-8",
+            "pl-8",
+            "pr-3",
+            "text-body-sm",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "placeholder-on-surface-variant"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "confirmation_number",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "assignment",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "group",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "monitoring",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "contact_support",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "confirmation_number",
+        "assignment",
+        "group",
+        "monitoring",
+        "settings",
+        "contact_support",
+        "search",
+        "notifications",
+        "help_outline",
+        "search_off"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBKDWk13sQY4usJWda9G_KF5PPkYUq5T8ytqJ-ZzjQ3fMExD7-qrMsisj5Ns-l1YkhyT4mD324DH_ROaxsMrRorwh-dkg2-ETCpU-jcvcHKcYUR1hdAPQ_jlZlizTKfE-Ws6nSGjOHxMcxspu3puD",
+          "alt": "Agent Profile"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "on-tertiary-fixed-variant": "#3f465c",
+        "error": "#ba1a1a",
+        "surface-container-high": "#e6e8ea",
+        "tertiary-fixed": "#dae2fd",
+        "tertiary-container": "#3d4459",
+        "surface-dim": "#d8dadc",
+        "secondary": "#505f76",
+        "surface-container-lowest": "#ffffff",
+        "tertiary": "#262e42",
+        "on-tertiary": "#ffffff",
+        "surface": "#f7f9fb",
+        "outline": "#737781",
+        "on-secondary-fixed": "#0b1c30",
+        "error-container": "#ffdad6",
+        "surface-variant": "#e0e3e5",
+        "outline-variant": "#c3c6d1",
+        "on-tertiary-container": "#aab2cb",
+        "on-primary-container": "#8fb3f6",
+        "on-error-container": "#93000a",
+        "on-secondary-container": "#54647a",
+        "primary-fixed": "#d7e2ff",
+        "surface-container-low": "#f2f4f6",
+        "on-background": "#191c1e",
+        "inverse-on-surface": "#eff1f3",
+        "surface-container-highest": "#e0e3e5",
+        "secondary-fixed-dim": "#b7c8e1",
+        "background": "#f7f9fb",
+        "on-surface": "#191c1e",
+        "surface-tint": "#395e9b",
+        "inverse-primary": "#abc7ff",
+        "primary-fixed-dim": "#abc7ff",
+        "on-secondary-fixed-variant": "#38485d",
+        "on-tertiary-fixed": "#131b2e",
+        "surface-container": "#eceef0",
+        "primary": "#002d62",
+        "on-error": "#ffffff",
+        "surface-bright": "#f7f9fb",
+        "inverse-surface": "#2d3133",
+        "tertiary-fixed-dim": "#bec6e0",
+        "on-primary-fixed": "#001b3f",
+        "primary-container": "#1a4480",
+        "on-primary-fixed-variant": "#1d4682",
+        "secondary-fixed": "#d3e4fe",
+        "on-primary": "#ffffff",
+        "secondary-container": "#d0e1fb",
+        "on-secondary": "#ffffff",
+        "on-surface-variant": "#434750"
+      },
+      "fonts": [
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "icon": "confirmation_number",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "icon": "assignment",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "icon": "group",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "monitoring",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "icon": "contact_support",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create Ticket",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "icon": "notifications",
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "help_outline",
+          "icon": "help_outline",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Clear All Filters",
+          "icon": null,
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Retry Load",
+          "icon": null,
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "+ Create New Ticket",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "input",
+          "label": "Search tickets...",
+          "type": "text",
+          "placeholder": "Search tickets...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "icon": "confirmation_number",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "icon": "assignment",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "icon": "group",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "monitoring",
+          "route": "#",
+          "active": false
+        }
+      ],
+      "title": "Empty and Error Recovery - SurfaceGate Desk"
+    },
+    "874a85117dce4dbd99957f62882f0fbc": {
+      "screenId": "874a85117dce4dbd99957f62882f0fbc",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "md:flex",
+            "flex-col",
+            "h-screen",
+            "w-64",
+            "border-r",
+            "border-outline-variant",
+            "bg-surface",
+            "dark:bg-on-surface",
+            "sticky"
+          ],
+          "childCount": 6
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "flex",
+            "md:hidden",
+            "justify-between",
+            "items-center",
+            "w-full",
+            "px-lg",
+            "py-sm",
+            "sticky",
+            "top-0",
+            "z-40"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "p-margin",
+            "overflow-y-auto"
+          ],
+          "childCount": 18
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "menu",
+          "classes": [
+            "text-on-surface-variant",
+            "p-sm",
+            "hover:bg-surface-container-high",
+            "rounded-full"
+          ],
+          "icon": "menu",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "classes": [
+            "text-on-surface-variant",
+            "p-sm",
+            "hover:bg-surface-container-high",
+            "rounded-full"
+          ],
+          "icon": "notifications",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Discard",
+          "classes": [
+            "px-md",
+            "py-sm",
+            "text-label-md",
+            "font-label-md",
+            "text-primary",
+            "hover:bg-primary-fixed",
+            "transition-colors",
+            "rounded-DEFAULT"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Save Ticket",
+          "classes": [
+            "px-md",
+            "py-sm",
+            "text-label-md",
+            "font-label-md",
+            "bg-primary",
+            "text-on-primary",
+            "hover:bg-primary-container",
+            "transition-colors",
+            "rounded-DEFAULT",
+            "shadow-sm"
+          ],
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "Browse Files",
+          "classes": [
+            "mt-md",
+            "px-md",
+            "py-sm",
+            "text-label-md",
+            "font-label-md",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Cancel",
+          "classes": [
+            "px-lg",
+            "py-sm",
+            "text-label-md",
+            "font-label-md",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "hover:bg-surface-container-low",
+            "transition-colors",
+            "rounded-DEFAULT"
+          ],
+          "icon": null,
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Ticket",
+          "classes": [
+            "px-lg",
+            "py-sm",
+            "text-label-md",
+            "font-label-md",
+            "bg-primary",
+            "text-on-primary",
+            "hover:bg-primary-container",
+            "transition-colors",
+            "rounded-DEFAULT",
+            "shadow-sm",
+            "flex",
+            "items-center",
+            "gap-xs"
+          ],
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "SurfaceGate Desk",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Brief summary of the issue",
+          "placeholder": "Brief summary of the issue",
+          "name": "subject",
+          "classes": [
+            "w-full",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "px-md",
+            "py-sm",
+            "text-body-md",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "outline-none",
+            "transition-colors"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "textarea",
+          "label": "Detailed explanation of the issue, steps to reproduce, or relevant context.",
+          "placeholder": "Detailed explanation of the issue, steps to reproduce, or relevant context.",
+          "name": "description",
+          "classes": [
+            "w-full",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "px-md",
+            "py-sm",
+            "text-body-md",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "outline-none",
+            "transition-colors",
+            "resize-y"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search users...",
+          "placeholder": "Search users...",
+          "name": "requester",
+          "classes": [
+            "w-full",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "pl-lg",
+            "pr-md",
+            "py-sm",
+            "text-body-md",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "outline-none",
+            "transition-colors"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "status",
+          "placeholder": "",
+          "name": "status",
+          "classes": [
+            "w-full",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "px-md",
+            "py-sm",
+            "text-body-md",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "outline-none",
+            "transition-colors",
+            "appearance-none"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "priority",
+          "placeholder": "",
+          "name": "priority",
+          "classes": [
+            "w-full",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "px-md",
+            "py-sm",
+            "text-body-md",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "outline-none",
+            "transition-colors",
+            "appearance-none"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "assignee_group",
+          "placeholder": "",
+          "name": "assignee_group",
+          "classes": [
+            "w-full",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "px-md",
+            "py-sm",
+            "text-body-md",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "outline-none",
+            "transition-colors",
+            "appearance-none"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "confirmation_number",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "group_work",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "engineering",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "insights",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "href": "#",
+          "classes": [
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "confirmation_number",
+        "group_work",
+        "engineering",
+        "insights",
+        "settings",
+        "help",
+        "menu",
+        "notifications",
+        "error",
+        "upload_file",
+        "person_search",
+        "save"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCOY6KbFG_jXVTcTUk8_Q0PVxtvsv9UnBl3z3lGj0RoxwLATLc-B-yXn3yCK28xQiBwIheDV4FPBTkO4sKebTeezGkIPX_uYy8a3glaicegVOe3Kf90L-gml5coZ9wrN8s6m1kX-G_uwZN36c6Sl-",
+          "alt": "User Avatar"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "on-tertiary-fixed-variant": "#3f465c",
+        "error": "#ba1a1a",
+        "surface-container-high": "#e6e8ea",
+        "tertiary-fixed": "#dae2fd",
+        "tertiary-container": "#3d4459",
+        "surface-dim": "#d8dadc",
+        "secondary": "#505f76",
+        "surface-container-lowest": "#ffffff",
+        "tertiary": "#262e42",
+        "on-tertiary": "#ffffff",
+        "surface": "#f7f9fb",
+        "outline": "#737781",
+        "on-secondary-fixed": "#0b1c30",
+        "error-container": "#ffdad6",
+        "surface-variant": "#e0e3e5",
+        "outline-variant": "#c3c6d1",
+        "on-tertiary-container": "#aab2cb",
+        "on-primary-container": "#8fb3f6",
+        "on-error-container": "#93000a",
+        "on-secondary-container": "#54647a",
+        "primary-fixed": "#d7e2ff",
+        "surface-container-low": "#f2f4f6",
+        "on-background": "#191c1e",
+        "inverse-on-surface": "#eff1f3",
+        "surface-container-highest": "#e0e3e5",
+        "secondary-fixed-dim": "#b7c8e1",
+        "background": "#f7f9fb",
+        "on-surface": "#191c1e",
+        "surface-tint": "#395e9b",
+        "inverse-primary": "#abc7ff",
+        "primary-fixed-dim": "#abc7ff",
+        "on-secondary-fixed-variant": "#38485d",
+        "on-tertiary-fixed": "#131b2e",
+        "surface-container": "#eceef0",
+        "primary": "#002d62",
+        "on-error": "#ffffff",
+        "surface-bright": "#f7f9fb",
+        "inverse-surface": "#2d3133",
+        "tertiary-fixed-dim": "#bec6e0",
+        "on-primary-fixed": "#001b3f",
+        "primary-container": "#1a4480",
+        "on-primary-fixed-variant": "#1d4682",
+        "secondary-fixed": "#d3e4fe",
+        "on-primary": "#ffffff",
+        "secondary-container": "#d0e1fb",
+        "on-secondary": "#ffffff",
+        "on-surface-variant": "#434750"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Inter"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "icon": "confirmation_number",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "icon": "group_work",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "icon": "engineering",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "icon": "help",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "menu",
+          "icon": "menu",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "icon": "notifications",
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "Discard",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Save Ticket",
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "Browse Files",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Cancel",
+          "icon": null,
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Ticket",
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "SurfaceGate Desk",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Brief summary of the issue",
+          "type": "text",
+          "placeholder": "Brief summary of the issue",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "Detailed explanation of the issue, steps to reproduce, or relevant context.",
+          "type": "textarea",
+          "placeholder": "Detailed explanation of the issue, steps to reproduce, or relevant context.",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "Search users...",
+          "type": "text",
+          "placeholder": "Search users...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "status",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "priority",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "assignee_group",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "SurfaceGate Desk",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Ticket Operations",
+          "icon": "confirmation_number",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Queue Management",
+          "icon": "group_work",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Agent Workload",
+          "icon": "engineering",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "icon": "help",
+          "route": "#",
+          "active": false
+        }
+      ],
+      "title": "Ticket Editor - SurfaceGate Desk"
+    }
+  }
+}
