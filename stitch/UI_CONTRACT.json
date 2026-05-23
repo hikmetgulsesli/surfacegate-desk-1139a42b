@@ -1,0 +1,1441 @@
+[
+  {
+    "screenId": "100eff93a3ec4ee0b642471a5a5a393d",
+    "screenTitle": "Insights - SurfaceGate Desk",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "line": 140
+      },
+      {
+        "type": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "line": 144
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 154
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 158
+      },
+      {
+        "type": "link",
+        "label": "View All",
+        "href": "#",
+        "line": 295
+      },
+      {
+        "type": "link",
+        "label": "TKT-8921",
+        "href": "#",
+        "line": 305
+      },
+      {
+        "type": "link",
+        "label": "TKT-8900",
+        "href": "#",
+        "line": 317
+      },
+      {
+        "type": "link",
+        "label": "TKT-8854",
+        "href": "#",
+        "line": 341
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 118
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 121
+      },
+      {
+        "type": "button",
+        "label": "Last 24 Hours",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "Export Summary",
+        "line": 177
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 247
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "line": 140
+      },
+      {
+        "type": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "line": 144
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 154
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 158
+      },
+      {
+        "type": "link",
+        "label": "View All",
+        "href": "#",
+        "line": 295
+      },
+      {
+        "type": "link",
+        "label": "TKT-8921",
+        "href": "#",
+        "line": 305
+      },
+      {
+        "type": "link",
+        "label": "TKT-8900",
+        "href": "#",
+        "line": 317
+      },
+      {
+        "type": "link",
+        "label": "TKT-8854",
+        "href": "#",
+        "line": 341
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 118
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 121
+      },
+      {
+        "type": "button",
+        "label": "Last 24 Hours",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "Export Summary",
+        "line": 177
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 247
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 15,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "18b770b61b3a487cafa7c30c5a66d4c1",
+    "screenTitle": "Queue and Status Management - SurfaceGate Desk",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 152
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 156
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 168
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 200
+      },
+      {
+        "type": "button",
+        "label": "sort",
+        "line": 204
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 220
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 270
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 300
+      },
+      {
+        "type": "button",
+        "label": "Lane",
+        "line": 325
+      },
+      {
+        "type": "input",
+        "label": "Search tickets, IDs, or assignees...",
+        "inputType": "text",
+        "placeholder": "Search tickets, IDs, or assignees...",
+        "line": 174
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 152
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 156
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 168
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 200
+      },
+      {
+        "type": "button",
+        "label": "sort",
+        "line": 204
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 220
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 270
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 300
+      },
+      {
+        "type": "button",
+        "label": "Lane",
+        "line": 325
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search tickets, IDs, or assignees...",
+        "inputType": "text",
+        "placeholder": "Search tickets, IDs, or assignees...",
+        "line": 174
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 16,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "1c7aec3ef6054cf995d16bace7745994",
+    "screenTitle": "Agent Workload - SurfaceGate Desk",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "line": 124
+      },
+      {
+        "type": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "line": 130
+      },
+      {
+        "type": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 151
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 157
+      },
+      {
+        "type": "link",
+        "label": "#INC-4092",
+        "href": "#",
+        "line": 290
+      },
+      {
+        "type": "link",
+        "label": "#INC-4088",
+        "href": "#",
+        "line": 300
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 179
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 180
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "sort",
+        "line": 197
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 221
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 257
+      },
+      {
+        "type": "input",
+        "label": "Search agents or tickets...",
+        "inputType": "text",
+        "placeholder": "Search agents or tickets...",
+        "line": 175
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "line": 124
+      },
+      {
+        "type": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "line": 130
+      },
+      {
+        "type": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 151
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 157
+      },
+      {
+        "type": "link",
+        "label": "#INC-4092",
+        "href": "#",
+        "line": 290
+      },
+      {
+        "type": "link",
+        "label": "#INC-4088",
+        "href": "#",
+        "line": 300
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 179
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 180
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "sort",
+        "line": 197
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 221
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 257
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search agents or tickets...",
+        "inputType": "text",
+        "placeholder": "Search agents or tickets...",
+        "line": 175
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 15,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "874a85117dce4dbd99957f62882f0fbc",
+    "screenTitle": "Ticket Editor - SurfaceGate Desk",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "line": 116
+      },
+      {
+        "type": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "line": 122
+      },
+      {
+        "type": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "line": 128
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 145
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 156
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 162
+      },
+      {
+        "type": "button",
+        "label": "Discard",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "Save Ticket",
+        "line": 174
+      },
+      {
+        "type": "button",
+        "label": "Browse Files",
+        "line": 209
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 258
+      },
+      {
+        "type": "button",
+        "label": "Ticket",
+        "line": 259
+      },
+      {
+        "type": "input",
+        "label": "Brief summary of the issue",
+        "inputType": "text",
+        "placeholder": "Brief summary of the issue",
+        "line": 192
+      },
+      {
+        "type": "input",
+        "label": "Detailed explanation of the issue, steps to reproduce, or relevant context.",
+        "inputType": "textarea",
+        "placeholder": "Detailed explanation of the issue, steps to reproduce, or relevant context.",
+        "line": 200
+      },
+      {
+        "type": "input",
+        "label": "Search users...",
+        "inputType": "text",
+        "placeholder": "Search users...",
+        "line": 223
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 228
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 236
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 245
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "line": 116
+      },
+      {
+        "type": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "line": 122
+      },
+      {
+        "type": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "line": 128
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 145
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 156
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 162
+      },
+      {
+        "type": "button",
+        "label": "Discard",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "Save Ticket",
+        "line": 174
+      },
+      {
+        "type": "button",
+        "label": "Browse Files",
+        "line": 209
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 258
+      },
+      {
+        "type": "button",
+        "label": "Ticket",
+        "line": 259
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Brief summary of the issue",
+        "inputType": "text",
+        "placeholder": "Brief summary of the issue",
+        "line": 192
+      },
+      {
+        "type": "input",
+        "label": "Detailed explanation of the issue, steps to reproduce, or relevant context.",
+        "inputType": "textarea",
+        "placeholder": "Detailed explanation of the issue, steps to reproduce, or relevant context.",
+        "line": 200
+      },
+      {
+        "type": "input",
+        "label": "Search users...",
+        "inputType": "text",
+        "placeholder": "Search users...",
+        "line": 223
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 228
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 236
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 245
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 19,
+    "requiresRouter": false,
+    "requiresDragDrop": true
+  },
+  {
+    "screenId": "2f12190f7367422fbacd3ea4d0156ab7",
+    "screenTitle": "Ticket Operations - SurfaceGate Desk",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "line": 129
+      },
+      {
+        "type": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "line": 137
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 152
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 163
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 174
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 177
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 237
+      },
+      {
+        "type": "button",
+        "label": "sort",
+        "line": 240
+      },
+      {
+        "type": "button",
+        "label": "chevron_left",
+        "line": 322
+      },
+      {
+        "type": "button",
+        "label": "chevron_right",
+        "line": 323
+      },
+      {
+        "type": "button",
+        "label": "content_copy",
+        "line": 337
+      },
+      {
+        "type": "button",
+        "label": "open_in_new",
+        "line": 338
+      },
+      {
+        "type": "button",
+        "label": "Assign to me",
+        "line": 349
+      },
+      {
+        "type": "button",
+        "label": "Change Status",
+        "line": 352
+      },
+      {
+        "type": "button",
+        "label": "attach_file",
+        "line": 416
+      },
+      {
+        "type": "button",
+        "label": "send",
+        "line": 417
+      },
+      {
+        "type": "input",
+        "label": "Search tickets, agents, or knowledge base...",
+        "inputType": "text",
+        "placeholder": "Search tickets, agents, or knowledge base...",
+        "line": 170
+      },
+      {
+        "type": "input",
+        "label": "Add an internal note or reply...",
+        "inputType": "textarea",
+        "placeholder": "Add an internal note or reply...",
+        "line": 414
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "line": 129
+      },
+      {
+        "type": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "line": 137
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 152
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 163
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 174
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 177
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 237
+      },
+      {
+        "type": "button",
+        "label": "sort",
+        "line": 240
+      },
+      {
+        "type": "button",
+        "label": "chevron_left",
+        "line": 322
+      },
+      {
+        "type": "button",
+        "label": "chevron_right",
+        "line": 323
+      },
+      {
+        "type": "button",
+        "label": "content_copy",
+        "line": 337
+      },
+      {
+        "type": "button",
+        "label": "open_in_new",
+        "line": 338
+      },
+      {
+        "type": "button",
+        "label": "Assign to me",
+        "line": 349
+      },
+      {
+        "type": "button",
+        "label": "Change Status",
+        "line": 352
+      },
+      {
+        "type": "button",
+        "label": "attach_file",
+        "line": 416
+      },
+      {
+        "type": "button",
+        "label": "send",
+        "line": 417
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search tickets, agents, or knowledge base...",
+        "inputType": "text",
+        "placeholder": "Search tickets, agents, or knowledge base...",
+        "line": 170
+      },
+      {
+        "type": "input",
+        "label": "Add an internal note or reply...",
+        "inputType": "textarea",
+        "placeholder": "Add an internal note or reply...",
+        "line": 414
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 21,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "44fd8a8c36b1447094c42f0cc70538c4",
+    "screenTitle": "Empty and Error Recovery - SurfaceGate Desk",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "line": 114
+      },
+      {
+        "type": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "line": 118
+      },
+      {
+        "type": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "line": 122
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 126
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 137
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 159
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 163
+      },
+      {
+        "type": "button",
+        "label": "help_outline",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "Clear All Filters",
+        "line": 190
+      },
+      {
+        "type": "button",
+        "label": "Retry Load",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "+ Create New Ticket",
+        "line": 198
+      },
+      {
+        "type": "input",
+        "label": "Search tickets...",
+        "inputType": "text",
+        "placeholder": "Search tickets...",
+        "line": 154
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "line": 114
+      },
+      {
+        "type": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "line": 118
+      },
+      {
+        "type": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "line": 122
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 126
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 137
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 159
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 163
+      },
+      {
+        "type": "button",
+        "label": "help_outline",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "Clear All Filters",
+        "line": 190
+      },
+      {
+        "type": "button",
+        "label": "Retry Load",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "+ Create New Ticket",
+        "line": 198
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search tickets...",
+        "inputType": "text",
+        "placeholder": "Search tickets...",
+        "line": 154
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 13,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "3ca85751798f4e36bda531467856bcc5",
+    "screenTitle": "Settings and Preferences - SurfaceGate Desk",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "line": 123
+      },
+      {
+        "type": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "line": 127
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 131
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 154
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 174
+      },
+      {
+        "type": "button",
+        "label": "help_outline",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 183
+      },
+      {
+        "type": "button",
+        "label": "Reset Settings",
+        "line": 310
+      },
+      {
+        "type": "button",
+        "label": "Discard",
+        "line": 322
+      },
+      {
+        "type": "button",
+        "label": "Changes",
+        "line": 325
+      },
+      {
+        "type": "input",
+        "label": "Search settings...",
+        "inputType": "text",
+        "placeholder": "Search settings...",
+        "line": 171
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 212
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 221
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 245
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 255
+      },
+      {
+        "type": "form",
+        "label": "form",
+        "line": 200
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Ticket Operations",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Queue Management",
+        "href": "#",
+        "line": 123
+      },
+      {
+        "type": "link",
+        "label": "Agent Workload",
+        "href": "#",
+        "line": 127
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 131
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 142
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 154
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 174
+      },
+      {
+        "type": "button",
+        "label": "help_outline",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 183
+      },
+      {
+        "type": "button",
+        "label": "Reset Settings",
+        "line": 310
+      },
+      {
+        "type": "button",
+        "label": "Discard",
+        "line": 322
+      },
+      {
+        "type": "button",
+        "label": "Changes",
+        "line": 325
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search settings...",
+        "inputType": "text",
+        "placeholder": "Search settings...",
+        "line": 171
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 212
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 221
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 245
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 255
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 19,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
